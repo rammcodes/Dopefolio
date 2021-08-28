@@ -1,2 +1,3 @@
 # Dopefolio
-Portfolio Template for Developers
+
+## Dopefolio - A Portfolio Template for Developers 🔥

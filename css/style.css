@@ -627,6 +627,10 @@ textarea {
     font-size: 1.2rem;
     text-align: left;
     text-align: center; }
+    .main-footer__lower a {
+      text-decoration: underline;
+      font-weight: bold;
+      margin-left: 2px; }
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
         padding: 3.5rem 0; } }
