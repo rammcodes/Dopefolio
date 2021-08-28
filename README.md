@@ -1,3 +1,3 @@
 # Dopefolio 🔥
 
-## Dopefolio - A Portfolio Template for Developers 🥑
+## Dopefolio - A Blazing Fast Multipage Portfolio Template for Developers 🚀
