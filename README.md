@@ -13,6 +13,6 @@
 * Easy to Use 🥑
 * No Additional Libraries 🤘
 * No Additional Frameworks 🙌
-* SEO Friendly ✅
+* SEO Friendly 💎
 * Great Audits Score 🎖️
 
