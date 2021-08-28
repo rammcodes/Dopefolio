@@ -10,7 +10,9 @@
 
 ## Features
 
-* Easy to Use
-* Performance Friendly
-* Fully Responsive
-* Optimized for SEO
+* Easy to Use ⚙️
+* No Additional Libraries 🤘
+* No Additional Frameworks 🙌
+* SEO Friendly ✅
+* Great Audits Score ⚡
+
