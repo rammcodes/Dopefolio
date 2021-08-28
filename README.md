@@ -10,9 +10,9 @@
 
 ## Features
 
-* Easy to Use ⚙️
+* Easy to Use 🥑
 * No Additional Libraries 🤘
 * No Additional Frameworks 🙌
 * SEO Friendly ✅
-* Great Audits Score ⚡
+* Great Audits Score 🎖️
 
