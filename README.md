@@ -27,6 +27,6 @@
 ## [Playground Link](https://dopefolio-playground.netlify.app) 🔗
 
 <div align="center">
-  <img src="https://i.ibb.co/HtwYzJP/ezgif-com-gif-maker-2.gif" alt="Dopefolio Playground" width="100%" />
+  <img src="https://i.postimg.cc/xjsqN9GG/ezgif-com-gif-maker-2.gif" alt="Dopefolio Playground" width="100%" />
   <br>
 </div>
