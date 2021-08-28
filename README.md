@@ -2,7 +2,7 @@
 
 ## A Blazing Fast Multipage Portfolio Template for Developers 🚀
 
-<h2 align="center">
-  <img src="https://github.com/RamMahe1110/Dopefolio/blob/6f8b45d8a7fd1ee1f044df14821b5e0b763740be/resources/demo.gif?raw=true" alt="Dopefolio Demo" width="600px" />
+<div align="center">
+  <img src="https://i.postimg.cc/CxZXqhWM/ezgif-com-video-to-gif-1.gif" alt="Dopefolio Demo" width="100%" />
   <br>
-</h2>
+</div>
