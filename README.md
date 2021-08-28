@@ -10,6 +10,7 @@
   <br>
 </div>
 
+
 ## Features
 
 - **Easy to Use** 🥑
@@ -19,3 +20,13 @@
 - **Great Audits Score** 🎖️
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
+
+
+## Test the template with different colors on the playground link 🚀
+
+## [Playground Link](https://dopefolio-playground.netlify.app) 🔗
+
+<div align="center">
+  <img src="https://i.ibb.co/HtwYzJP/ezgif-com-gif-maker-2.gif" alt="Dopefolio Playground" width="100%" />
+  <br>
+</div>
