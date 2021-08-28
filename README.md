@@ -25,7 +25,6 @@
 
 <br/>
 <br/>
-<br/>
 
 ## Test the template with different colors on the playground link 🚀
 
