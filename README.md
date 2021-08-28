@@ -10,6 +10,8 @@
   <br>
 </div>
 
+<br/>
+<br/>
 
 ## Features
 
@@ -21,6 +23,9 @@
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
+<br/>
+<br/>
+<br/>
 
 ## Test the template with different colors on the playground link 🚀
 
