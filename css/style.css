@@ -20,6 +20,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   box-sizing: inherit;
   font-family: inherit; }
 
+:root {
+  --heading-secondary-after-bg: $themeClrPrimary; }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
@@ -103,7 +106,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: var(--heading-secondary-after-bg);
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -392,6 +395,41 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .contact__btn {
         width: 100%; } }
+
+.themeClrSelector {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .themeClrSelector {
+      top: 100%;
+      transform: translateY(-100%); } }
+  .themeClrSelector__input {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    opacity: 0;
+    position: relative;
+    z-index: 10; }
+  .themeClrSelector__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1; }
 
 .project-cs-hero {
   color: #fff;

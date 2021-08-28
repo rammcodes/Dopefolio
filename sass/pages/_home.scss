@@ -285,3 +285,44 @@
     }
   }
 }
+
+.themeClrSelector {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  //border-radius: 50px;
+
+  @include respond(phone) {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  &__input {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

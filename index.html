@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
-          <div class="header__logo-img-cont">
+          <div class="header__logo-img-cont dynamicBgClr">
             <img
               src="./assets/png/john-doe.png"
               alt="Ram Maheshwari Logo Image"
@@ -75,7 +75,14 @@
         </div>
       </div>
     </header>
-    <section class="home-hero">
+    <div class="themeClrSelector">
+      <input type="color" value="#0078d7" class="themeClrSelector__input" />
+      <img
+        src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+        class="themeClrSelector__img"
+      />
+    </div>
+    <section class="home-hero dynamicBg"">
       <div class="home-hero__content">
         <h1 class="heading-primary">Hey, My name is John Doe</h1>
         <div class="home-hero__info">
@@ -330,7 +337,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button type="submit" class="btn btn--theme contact__btn dynamicBgClr">
               Submit
             </button>
           </form>
