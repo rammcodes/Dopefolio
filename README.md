@@ -56,7 +56,7 @@ $ git remote remove origin
 
 <br/>
 
-Then you can install the dev dependencies for packages like SASS, Autoprefixer, etc. either using NPM or Yarn and that will allow us to write SASS code and create a production ready build
+Then you can install the dependencies
 
 Using NPM:
 
