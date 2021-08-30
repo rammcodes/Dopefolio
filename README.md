@@ -67,13 +67,3 @@ $ npm install
 # Listen to changes in CSS Preprocessor files ( SASS files ) 
 $ npm run compile:scss
 ```
-
-Using Yarn:
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start development server
-$ yarn start
-```
