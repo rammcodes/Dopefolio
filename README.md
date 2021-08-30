@@ -34,3 +34,46 @@
   <img src="https://i.postimg.cc/xjsqN9GG/ezgif-com-gif-maker-2.gif" alt="Dopefolio Playground" width="100%" />
   <br>
 </div>
+
+<br/>
+<br/>
+
+
+## How To Use 🔧
+
+From your command line, first clone Dopefolio:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/rammahe1110/dopefolio
+
+# Go into the repository
+$ cd dopefolio
+
+# Remove current origin repository
+$ git remote remove origin
+```
+
+<br/>
+
+Then you can install the dev dependencies for packages like SASS, Autoprefixer, etc. either using NPM or Yarn and that will allow us to write SASS code and create a production ready build
+
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Listen to changes in CSS Preprocessor files ( SASS files ) 
+$ npm run compile:scss
+```
+
+Using Yarn:
+
+```bash
+# Install dependencies
+$ yarn
+
+# Start development server
+$ yarn start
+```
