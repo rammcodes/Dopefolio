@@ -289,6 +289,13 @@ Go to `/index.html` and fill your information, there are 6 sections:
 
 ### Projects
 
+- On `.heading-sec__sub`, put a short description about the section.
+- `projects__row` is the row for each project. So, if you want to add multiple projects then you need to create add row for each project. Currently, I already added 3 rows for 3 projects but if you like to add more projects then you can just copy the code for the row and paste it so there will be more projects.
+
+Inside ```projects__row``` there's a **anchor tag** so clicking on it will take you to the project page for that particular project. I have already added 3 extra pages for each project called ```project-1.html```, ```project-2.html``` and ```project-3.html```. All these 3 files has the same code only the project title, image and description data is something that you will have to change.
+
+You can also render the page dynamically from server if you are using any server side language or using any framework like React, Vue, etc. but to keep things simple, I just prefer to create a file for each project as I don't wanna list more than 4 projects so its fine.
+
 ```html
 <!-- **** Projects Section of Homepage **** -->
 <section id="projects" class="projects sec-pad">
