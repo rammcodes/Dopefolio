@@ -80,6 +80,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 - On `.header__logo-sub`, Add your own Name.
 
 ```html
+<!-- **** Header of Homepage **** -->
 <header class="header">
   <div class="header__content">
     <div class="header__logo-container">
@@ -138,6 +139,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
     </div>
   </div>
 </header>
+<!-- END Header -->
 ```
 
 ### Hero Section of Homepage
@@ -282,12 +284,10 @@ Go to `/index.html` and fill your information, there are 6 sections:
     </div>
   </div>
 </section>
-<!-- /END Hero Section -->
+<!-- END About Section -->
 ```
 
 ### Projects
-
-- On `.heading-sec__sub`, put a short description about the section.
 
 ```html
 <!-- **** Projects Section of Homepage **** -->
@@ -374,5 +374,5 @@ Go to `/index.html` and fill your information, there are 6 sections:
     </div>
   </div>
 </section>
-<!-- /END Hero Section -->
+<!-- END Projects Section -->
 ```
