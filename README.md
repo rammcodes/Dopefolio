@@ -294,13 +294,14 @@ Go to `/index.html` and fill your information, there are 6 sections:
 - One `.projects__row` for each project in your portfolio ( so for example, if you have 3 projects then you need 3 `.projects__row` one by one).
 
 - Inside each `projects__row`, there are 4 main elements.
-    - Project Image located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups]('smartmockups.com') to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of mockup file will be less.
-    
-    - `.projects__row-content-title` is where you need to add your Project title.
-    - `.projects__row-content-desc` is where you need to add a short 2-3 lines description about your project. As, there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
-    - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project. 
 
-Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-1.html`, `project-2.html` and `project-3.html`. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-1.html` as the code is going to be same and the only thing that you need to change is the data inside each project file like the project title, description, image, etc.
+  - Project Image located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups]('smartmockups.com') to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of mockup file will be less.
+
+  - `.projects__row-content-title` is where you need to add your Project title.
+  - `.projects__row-content-desc` is where you need to add a short 2-3 lines description about your project. As, there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
+  - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project.
+
+Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-1.html`, `project-2.html` and `project-3.html`. They all contain the same code only the project title, description and image will change. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-1.html` as the code is going to be same and the only thing that you need to change is the data inside each project.
 
 ```html
 <!-- **** Projects Section of Homepage **** -->
@@ -389,3 +390,143 @@ Currently, I have already added a separate for each project ( considering there 
 </section>
 <!-- END Projects Section -->
 ```
+
+### Contact Section
+
+- On `.heading-sec__sub`, put a short description about the section.
+- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you add more fields as per your needs but just make sure the change the name of **label** and **input/textarea** inside it.
+
+If you like to know how to submit forms so you can receive the form details on your email then highly recommend using **formspree.io** as its easier to setup and free to use. If you are using **Netlify** to host the site then Netlify has inbuilt form receiver which you can use instead of **formspree**.
+
+<!-- **** Contact Section of Homepage **** -->
+
+```html
+<section id="contact" class="contact sec-pad dynamicBg">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+      <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+      <span class="heading-sec__sub heading-sec__sub--lt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+        tempora explicabo quae quod deserunt eius sapiente
+      </span>
+    </h2>
+    <div class="contact__form-container">
+      <form action="#" class="contact__form">
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="name">Name</label>
+          <input
+            required
+            placeholder="Enter Your Name"
+            type="text"
+            class="contact__form-input"
+            name="name"
+            id="name"
+          />
+        </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="email">Email</label>
+          <input
+            required
+            placeholder="Enter Your Email"
+            type="text"
+            class="contact__form-input"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="message">Message</label>
+          <textarea
+            required
+            cols="30"
+            rows="10"
+            class="contact__form-input"
+            placeholder="Enter Your Message"
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn--theme contact__btn">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+```
+
+<!-- END Contact Section -->
+
+### Footer Section
+
+- Inside h4 tag with class `.heading heading-sm text-lt` add your name.
+- On `.main-footer__short-desc` put a short description about yourself.
+- On Anchor tag inside `.main-footer__social-cont`, fill the href attribute with link related to your social media account.
+
+<!-- **** Footer Section **** -->
+```html
+<footer class="main-footer">
+  <div class="main-container">
+    <div class="main-footer__upper">
+      <div class="main-footer__row main-footer__row-1">
+        <h2 class="heading heading-sm main-footer__heading-sm">
+          <span>Social</span>
+        </h2>
+        <div class="main-footer__social-cont">
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/github-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon main-footer__icon--mr-none"
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="main-footer__row main-footer__row-2">
+        <h4 class="heading heading-sm text-lt">John Doe</h4>
+        <p class="main-footer__short-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+          tempora explicabo quae quod deserunt
+        </p>
+      </div>
+    </div>
+
+    <div class="main-footer__lower">
+      &copy; Copyright 2021. Made by
+      <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+        >Ram Maheshwari</a
+      >
+    </div>
+  </div>
+</footer>
+```
+
+<!-- Footer Section -->
