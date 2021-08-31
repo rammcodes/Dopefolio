@@ -70,7 +70,7 @@ Once you run `npm run compile:scss`, then you can open the `index.html` inside y
 
 ## Template Instructions:
 
-### Step 1 - STRUCTURE
+## Step 1 - Homepage
 
 Go to `/index.html` and fill your information, there are 6 sections:
 
@@ -459,11 +459,12 @@ If you like to know how to submit forms so you can receive the form details on y
 
 ### Footer Section
 
-- Inside h4 tag with class `.heading heading-sm text-lt` add your name.
+- Inside h4 tag with class `heading heading-sm text-lt` add your name.
 - On `.main-footer__short-desc` put a short description about yourself.
 - On Anchor tag inside `.main-footer__social-cont`, fill the href attribute with link related to your social media account.
 
 <!-- **** Footer Section **** -->
+
 ```html
 <footer class="main-footer">
   <div class="main-container">
@@ -529,4 +530,116 @@ If you like to know how to submit forms so you can receive the form details on y
 </footer>
 ```
 
-<!-- Footer Section -->
+<!-- END Footer Section -->
+
+<br/>
+
+## Step 2 - Project Page
+
+Each project will have its own Page. The project page will have important details about the project like the Project Title, Description, Technologies, Project Links, etc.
+
+### Project Hero Section
+
+- On `.heading-primary` add the Project Title.
+- On `.text-primary` add a short description about the Project.
+- On Anchor Tag that says **Live Link** with class `btn btn--bg`, add the Project Live Link as the value for the href attribute.
+
+
+<!-- **** Project Section **** -->
+```html
+<section class="project-cs-hero">
+  <div class="project-cs-hero__content">
+    <h1 class="heading-primary">Project 1</h1>
+    <div class="project-cs-hero__info">
+      <p class="text-primary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in
+        numquam incidunt earum quaerat cum fuga, atque similique natus nobis
+        sit.
+      </p>
+    </div>
+    <div class="project-cs-hero__cta">
+      <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+    </div>
+  </div>
+</section>
+```
+<!-- **** END Project Hero Section **** -->
+
+
+### Project Details Section
+
+- On `.project-details__showcase-img`, change the value of **src** to the location/link of Project Mockup.
+- On `.project-details__desc-para` to add a detailed paragraph describing your project. Use multiple `.project-details__desc-para` elements for multiple paragraphs.
+- On `.skills` mention the skills that used to build the project inside `.skills__skill` to mention each skill.
+- On Anchor Tag that says **Live Link** with class `btn btn--med btn--theme project-details__links-btn`, add the Project Live Link as the value for the href attribute.
+- On Anchor Tag that says **Code Link** with class `btn btn--med btn--theme-inv project-details__links-btn`, add the Project's Code Link ( Repository  Link ) as the value for the href attribute.
+
+<!-- **** Project Details Section **** -->
+```html
+<section class="project-details">
+  <div class="main-container">
+    <div class="project-details__content">
+      <div class="project-details__showcase-img-cont">
+        <img
+          src="./assets/jpeg/project-mockup-example.jpeg"
+          alt="Project Image"
+          class="project-details__showcase-img"
+        />
+      </div>
+      <div class="project-details__content-main">
+        <div class="project-details__desc">
+          <h3 class="project-details__content-title">Project Overview</h3>
+          <p class="project-details__desc-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
+            tenetur minus quaerat aliquid, aut provident blanditiis, deleniti
+            aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia
+            laborum corrupti ullam rem. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Neque alias tenetur minus quaerat aliquid, aut
+            provident blanditiis, deleniti aspernatur ipsam eaque veniam
+            voluptatem corporis vitae mollitia laborum corrupti ullam rem?
+          </p>
+          <p class="project-details__desc-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
+            tenetur minus quaerat aliquid, aut provident blanditiis, deleniti
+            aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia
+            laborum corrupti ullam rem?
+          </p>
+        </div>
+        <div class="project-details__tools-used">
+          <h3 class="project-details__content-title">Tools Used</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">SASS</div>
+            <div class="skills__skill">GIT</div>
+            <div class="skills__skill">Shopify</div>
+            <div class="skills__skill">Wordpress</div>
+            <div class="skills__skill">Google ADS</div>
+            <div class="skills__skill">Facebook Ads</div>
+            <div class="skills__skill">Android</div>
+            <div class="skills__skill">IOS</div>
+          </div>
+        </div>
+        <div class="project-details__links">
+          <h3 class="project-details__content-title">See Live</h3>
+          <a
+            href="#"
+            class="btn btn--med btn--theme project-details__links-btn"
+            target="_blank"
+            >Live Link</a
+          >
+          <a
+            href="#"
+            class="btn btn--med btn--theme-inv project-details__links-btn"
+            target="_blank"
+            >Code Link</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+<!-- **** END Project Details Section **** -->
