@@ -394,7 +394,7 @@ Currently, I have already added a separate for each project ( considering there 
 ### Contact Section
 
 - On `.heading-sec__sub`, put a short description about the section.
-- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you add more fields as per your needs but just make sure the change the name of **label** and **input/textarea** inside it.
+- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your needs but just make sure the change the name of **label** and **input/textarea** inside it.
 
 If you like to know how to submit forms so you can receive the form details on your email then highly recommend using **formspree.io** as its easier to setup and free to use. If you are using **Netlify** to host the site then Netlify has inbuilt form receiver which you can use instead of **formspree**.
 
