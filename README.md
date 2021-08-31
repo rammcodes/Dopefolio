@@ -290,11 +290,17 @@ Go to `/index.html` and fill your information, there are 6 sections:
 ### Projects
 
 - On `.heading-sec__sub`, put a short description about the section.
-- `projects__row` is the row for each project. So, if you want to add multiple projects then you need to create add row for each project. Currently, I already added 3 rows for 3 projects but if you like to add more projects then you can just copy the code for the row and paste it so there will be more projects.
+- `.projects__row` is the row for each project in your portfolio.
+- One `.projects__row` for each project in your portfolio ( so for example, if you have 3 projects then you need 3 `.projects__row` one by one).
 
-Inside ```projects__row``` there's a **anchor tag** so clicking on it will take you to the project page for that particular project. I have already added 3 extra pages for each project called ```project-1.html```, ```project-2.html``` and ```project-3.html```. All these 3 files has the same code only the project title, image and description data is something that you will have to change.
+- Inside each `projects__row`, there are 4 main elements.
+    - Project Image located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups]('smartmockups.com') to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of mockup file will be less.
+    
+    - `.projects__row-content-title` is where you need to add your Project title.
+    - `.projects__row-content-desc` is where you need to add a short 2-3 lines description about your project. As, there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
+    - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project. 
 
-You can also render the page dynamically from server if you are using any server side language or using any framework like React, Vue, etc. but to keep things simple, I just prefer to create a file for each project as I don't wanna list more than 4 projects so its fine.
+Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-1.html`, `project-2.html` and `project-3.html`. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-1.html` as the code is going to be same and the only thing that you need to change is the data inside each project file like the project title, description, image, etc.
 
 ```html
 <!-- **** Projects Section of Homepage **** -->
