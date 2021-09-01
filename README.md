@@ -687,5 +687,18 @@ Each project will have its own Page. The project page will have important detail
 
 <!-- **** END Project Details Section **** -->
 
+<br>
 
+---
+
+<br>
+
+## Author
+
+- **Ram Maheshwari** - [Linkedin](https://linkedin/in/rammcodes), [Twitter](https://twitter/rammcodes), [Github](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
+
+
+## License 📄
+
+This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
 
