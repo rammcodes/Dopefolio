@@ -35,6 +35,20 @@
 </div>
 
 <br/>
+
+----
+
+<br/>
+
+## Technologies used 🛠️
+
+- **HTML** 🚀
+- **CSS** 🚀
+- **JavaScript** 🚀
+- **SASS** 🚀
+
+---
+
 <br/>
 
 ## How To Use 🔧
@@ -672,3 +686,6 @@ Each project will have its own Page. The project page will have important detail
 ```
 
 <!-- **** END Project Details Section **** -->
+
+
+
