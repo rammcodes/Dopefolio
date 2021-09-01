@@ -695,7 +695,7 @@ Each project will have its own Page. The project page will have important detail
 
 ## Author
 
-- **Ram Maheshwari** - [Linkedin](https://linkedin/in/rammcodes), [Twitter](https://twitter/rammcodes), [Github](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
+- **Ram Maheshwari** - [Linkedin](https://linkedin.com/in/rammcodes), [Twitter](https://twitter/rammcodes), [Github](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
 
 
 ## License 📄
