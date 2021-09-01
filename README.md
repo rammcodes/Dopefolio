@@ -57,7 +57,7 @@ From your command line, first clone Dopefolio:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/rammahe1110/dopefolio
+$ git clone https://github.com/rammcodes/dopefolio
 
 # Go into the repository
 $ cd dopefolio
