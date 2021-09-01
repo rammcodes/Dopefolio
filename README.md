@@ -693,7 +693,7 @@ Each project will have its own Page. The project page will have important detail
 
 <br>
 
-## Author
+## Author 👨‍💻
 
 - **Ram Maheshwari** - [Linkedin](https://linkedin.com/in/rammcodes), [Twitter](https://twitter.com/rammcodes), [Github](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
 
