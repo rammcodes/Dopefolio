@@ -89,7 +89,11 @@ $themeClrPrimary: #0062b9;
 
 **NOTE**: I highly recommend to checkout the [Dopefolio Playground Link](https://dopefolio-playground.netlify.app) to test the template with different colors and see which color do you like the most.
 
+<br/>
+
 ---
+
+<br/>
 
 ## Step 2 - Homepage
 
@@ -554,6 +558,8 @@ If you like to know how to submit forms so you can receive the form details in y
 <br/>
 
 ---
+
+<br/>
 
 ## Step 3 - Project Page
 
