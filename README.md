@@ -700,7 +700,7 @@ Once you have done with your setup. You need to put your website online!
 
 I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
 
-Whenever you wanna host a new site on Netlify. You will need to create the **Create New Site** button from the Netlify's dashboard once you login into Netlify.
+Whenever you wanna host a new site on Netlify. You will need to press the **Create New Site** button from the Netlify's dashboard once you login into Netlify.
 
 Once you press the **Create Site Button** then you will have to follow the 3 steps:
 
