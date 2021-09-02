@@ -733,7 +733,7 @@ Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
 
 ## Support 😇
 
-If you find this project to be useful then please **support** me by donating some **Money** on the **Buy Me a Coffee** link below so I can continue chasing my dream of building useful **Open Source projects** that will help the developer community and the general audience and will allow me to change my life as well 🙂
+If you find this project to be useful then please **support** me by donating some **Money** on the **Buy Me a Coffee** link below so I can continue chasing my dream of building useful **Open Source projects** that will help the developer community and the general audience and will allow me to change my life as well 😇
 
 ## [Buy Me A Coffee](https://www.buymeacoffee.com/rammcodes) ❤️
 
