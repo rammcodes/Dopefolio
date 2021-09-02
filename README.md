@@ -715,6 +715,8 @@ Once you press the **Create Site Button** then you will have to follow the 3 ste
   <br>
 </div>
 
+<br>
+
 Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
 
 <br>
