@@ -14,10 +14,10 @@
 
 ## Features
 
-- **Easy to Use** 🥑
+- **Easy-to-use** 🥑
 - **No Additional Libraries** 🤘
 - **No Additional Frameworks** 🙌
-- **SEO Friendly** 💎
+- **SEO-friendly** 💎
 - **Great Audits Score** 🎖️
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
@@ -68,9 +68,7 @@ $ git remote remove origin
 
 <br/>
 
-Then you can install the dependencies
-
-Using NPM:
+Then you can install the dependencies using NPM:
 
 ```bash
 # Install dependencies
@@ -88,9 +86,9 @@ Once you run `npm run compile:scss`, then you can open the `index.html` inside y
 
 <br>
 
-## Template Instructions:
+## Template Instructions
 
-## Step 1 - STYLES
+### Step 1 - STYLES
 
 Make sure you have started the SASS to CSS compilation by running
 
@@ -115,11 +113,11 @@ $themeClrPrimary: #0062b9;
 
 <br/>
 
-## Step 2 - Homepage
+### Step 2 - Homepage
 
 Go to `/index.html` and fill your information, there are 6 sections:
 
-### Header of Homepage
+#### Header of Homepage
 
 - On `.header__logo-img`, Add your own Image, Better if the background of the image is transparent so the background can match the theme color. To remove the background of your image, you can visit remove.bg where you can upload your image and it will remove the background of it.
 - On `.header__logo-sub`, Add your own Name.
@@ -187,7 +185,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- END Header -->
 ```
 
-### Hero Section of Homepage
+#### Hero Section of Homepage
 
 - On `.heading-primary`, put your custom title.
 - On `.text-primary`, put a short description about yourself.
@@ -266,7 +264,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- /END Hero Section -->
 ```
 
-### About Section
+#### About Section
 
 - On `.heading-sec__sub`, put a short description about the section.
 - On `.about__content-details-para`, put your details here and use `<strong></strong>` tag to highlight specific keywords.
@@ -332,7 +330,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- END About Section -->
 ```
 
-### Projects
+#### Projects
 
 - On `.heading-sec__sub`, put a short description about the section.
 - `.projects__row` is the row for each project in your portfolio.
@@ -436,7 +434,7 @@ Currently, I have already added a separate for each project ( considering there 
 <!-- END Projects Section -->
 ```
 
-### Contact Section
+#### Contact Section
 
 - On `.heading-sec__sub`, put a short description about the section.
 - `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your needs but just make sure the change the name of **label** and **input/textarea** inside it.
@@ -502,7 +500,7 @@ If you like to know how to submit forms so you can receive the form details in y
 
 
 
-### Footer Section
+#### Footer Section
 
 - Inside h4 tag with the class `heading heading-sm text-lt` add your name.
 - On `.main-footer__short-desc` put a short description about yourself.
@@ -581,11 +579,11 @@ If you like to know how to submit forms so you can receive the form details in y
 
 <br/>
 
-## Step 3 - Project Page
+### Step 3 - Project Page
 
 Each project will have its own Page. The project page will have important details about the project like the Project Title, Description, Technologies, Project Links, etc.
 
-### Project Hero Section
+#### Project Hero Section
 
 - On `.heading-primary` add the Project Title.
 - On `.text-primary` add a short description about the Project.
@@ -613,7 +611,7 @@ Each project will have its own Page. The project page will have important detail
 
 <!-- **** END Project Hero Section **** -->
 
-### Project Details Section
+#### Project Details Section
 
 - On `.project-details__showcase-img`, change the value of **src** to the location/link of Project Mockup.
 - On `.project-details__desc-para` to add a detailed paragraph describing your project. Use multiple `.project-details__desc-para` elements for multiple paragraphs.
@@ -700,7 +698,7 @@ Each project will have its own Page. The project page will have important detail
 <br>
 
 
-## Deployment 📦
+### Deployment 📦
 
 Once you have done with your setup. You need to put your website online!
 
@@ -745,7 +743,7 @@ If you find this project to be useful then please **support** me by donating som
 
 ## Give a Star ⭐
 
-If you like this project then give it a **Github** star by pressing the **Star** button ⭐
+If you like this project, give it a **GitHub** star by pressing the **Star** button ⭐
 
 <br>
 
@@ -755,7 +753,7 @@ If you like this project then give it a **Github** star by pressing the **Star**
 
 ## Author 👨‍💻
 
-- **Ram Maheshwari** - [Linkedin](https://linkedin.com/in/rammcodes), [Twitter](https://twitter.com/rammcodes), [Github](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
+- **Ram Maheshwari** - [Linkedin](https://linkedin.com/in/rammcodes), [Twitter](https://twitter.com/rammcodes), [GitHub](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
 
 
 <br>
@@ -767,4 +765,3 @@ If you like this project then give it a **Github** star by pressing the **Star**
 ## License 📄
 
 This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
-
