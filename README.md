@@ -82,6 +82,12 @@ $ npm run compile:scss
 
 Once you run `npm run compile:scss`, then you can open the `index.html` inside your favorite browser or using the live server extension.
 
+<br>
+
+---
+
+<br>
+
 ## Template Instructions:
 
 ## Step 1 - STYLES
