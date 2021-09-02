@@ -53,6 +53,8 @@
 
 ## How To Use 🔧
 
+If you're willing to use the [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/rammcodes/Dopefolio) service, skip to the last step.
+
 From your command line, first clone Dopefolio:
 
 ```bash
