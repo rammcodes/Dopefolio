@@ -769,6 +769,16 @@ I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )
 
 <br>
 
+## Special Thanks ❤️
+
+Special thanks to [Jacobo Martínez](https://github.com/cobidev) for inspiring me to create something useful for the Developer Community. **Jacobo** is the creator of [Simplefolio](https://github.com/cobidev/simplefolio) which is another great Portfolio website Template for Developers. Check it out and show him some love ❤️
+
+<br>
+
+---
+
+<br>
+
 ## License 📄
 
 This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
