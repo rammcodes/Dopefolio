@@ -14,14 +14,14 @@
 
 ## Features
 
-- **Easy to Setup 💯** 
-- **Free to Use ( OpenSource ) 🥳** 
-- **No Additional Frameworks 🤘** 
-- **No Additional Libraries 🙌** 
-- **Multi Page 💎** 
-- **Fully Responsive 🚀** 
-- **Super Fast and Optimized for SEO ⚡** 
-- **Great Audits Score 🎖️** 
+- ### **Easy to Setup 💯** 
+- ### **Free to Use ( OpenSource ) 🥳** 
+- ### **No Additional Frameworks 🤘** 
+- ### **No Additional Libraries 🙌** 
+- ### **Multi Page 💎** 
+- ### **Fully Responsive 🚀** 
+- ### **Super Fast and Optimized for SEO ⚡** 
+- ### **Great Audits Score 🎖️** 
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
