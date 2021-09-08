@@ -14,11 +14,14 @@
 
 ## Features
 
-- **Easy to Use** 🥑
-- **No Additional Libraries** 🤘
-- **No Additional Frameworks** 🙌
-- **SEO Friendly** 💎
-- **Great Audits Score** 🎖️
+- **Easy to Setup** ✅
+- **Free to Use ( OpenSource )** ✅
+- **No Additional Frameworks** ✅
+- **No Additional Libraries** ✅
+- **Multi Page** ✅
+- **Fully Responsive** ✅
+- **Super Fast and Optimized for SEO** ✅
+- **Great Audits Score** ✅
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
@@ -439,7 +442,7 @@ Currently, I have already added a separate for each project ( considering there 
 ### Contact Section
 
 - On `.heading-sec__sub`, put a short description about the section.
-- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your needs but just make sure the change the name of **label** and **input/textarea** inside it.
+- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your need but just make sure to change the name of **label** and **input/textarea** inside it.
 
 If you like to know how to submit forms so you can receive the form details in your email then highly recommend using **formspree.io** as it's easier to set up and free to use. If you are using **Netlify** to host the site then Netlify has an inbuilt form receiver which you can use instead of **formspree**.
 
