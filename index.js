@@ -16,3 +16,16 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+if ("serviceWorker" in navigator)
+{
+  navigator.serviceWorker.register("sw.js").then(registration =>
+  {
+    console.log("SW Registered!");
+    console.log(registration);
+  }).catch(err =>
+  {
+    console.log("SW Registration Failed "+ err)
+  })
+}
