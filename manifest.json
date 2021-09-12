@@ -1,0 +1,33 @@
+{
+    "name":"Dopefolio",
+    "short_name":"Dopefolio",
+    "description":"Portfolio Template for Developers",
+    "start_url":".",
+    "background_color":"#eee",
+    "theme_color":"#eee",
+    "display":"standalone",
+    "orientation":"portrait",
+    "icons":[
+        {
+            "src":"assets/png/john-doe-512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        },
+        {
+            "src":"assets/png/john-doe-144.png",
+            "type":"image/png",
+            "sizes":"144x144"
+        },
+        {
+            "src":"assets/png/john-doe-196.png",
+            "type":"image/png",
+            "sizes":"196x196"
+        },
+        {
+            "src":"assets/png/john-doe-256.png",
+            "type":"image/png",
+            "sizes":"256x256"
+        }
+
+    ]
+}
