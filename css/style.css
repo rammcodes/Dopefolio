@@ -45,7 +45,20 @@ body {
 a {
   text-decoration: none;
   color: inherit; }
+#but{
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  align-items: flex-end;
+  margin-top: 15px;
+  font-weight: 2px;
+  color: #08087A;
 
+}
+#but:hover{
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
 li {
   list-style: none; }
 
