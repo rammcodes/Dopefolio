@@ -14,11 +14,14 @@
 
 ## Features
 
-- **Easy-to-use** 🥑
-- **No Additional Libraries** 🤘
-- **No Additional Frameworks** 🙌
-- **SEO-friendly** 💎
-- **Great Audits Score** 🎖️
+- ### **Easy-to-use** 🥑
+- ### **Free to Use ( OpenSource ) 🥳**
+- ### **Multi-page 💎**
+- ### **Fully Responsive 🚀**
+- ### **No Additional Libraries** 🤘
+- ### **No Additional Frameworks** 🙌
+- ### **Super Fast and Optimized for SEO ⚡**
+- ### **Great Audits Score** 🎖️
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
@@ -338,7 +341,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 
 - Inside each `projects__row`, there are 4 main elements.
 
-  - Project Image is located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups]('smartmockups.com') to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of the mockup file will be less.
+  - Project Image is located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups](https://smartmockups.com) to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of the mockup file will be less.
 
   - `.projects__row-content-title` is where you need to add your Project title.
   - `.projects__row-content-desc` is where you need to add a short 2-3 lines description of your project. As there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
@@ -437,7 +440,7 @@ Currently, I have already added a separate for each project ( considering there 
 #### Contact Section
 
 - On `.heading-sec__sub`, put a short description about the section.
-- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your needs but just make sure the change the name of **label** and **input/textarea** inside it.
+- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your need but just make sure to change the name of **label** and **input/textarea** inside it.
 
 If you like to know how to submit forms so you can receive the form details in your email then highly recommend using **formspree.io** as it's easier to set up and free to use. If you are using **Netlify** to host the site then Netlify has an inbuilt form receiver which you can use instead of **formspree**.
 
@@ -753,8 +756,23 @@ If you like this project, give it a **GitHub** star by pressing the **Star** but
 
 ## Author 👨‍💻
 
-- **Ram Maheshwari** - [Linkedin](https://linkedin.com/in/rammcodes), [Twitter](https://twitter.com/rammcodes), [GitHub](https://github.com/rammcodes), [Portfolio](https://rammaheshwari.com)  
+- **Ram Maheshwari** - **[LinkedIn](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[GitHub](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
 
+<br>
+
+#### Note: 
+I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
+
+
+<br>
+
+---
+
+<br>
+
+## Special Thanks ❤️
+
+Special thanks to [Jacobo Martínez](https://github.com/cobidev) for inspiring me to create something useful for the Developer Community. **Jacobo** is the creator of [Simplefolio](https://github.com/cobidev/simplefolio) which is another great Portfolio website Template for Developers. Check it out and show him some love ❤️
 
 <br>
 
