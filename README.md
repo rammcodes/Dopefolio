@@ -501,8 +501,6 @@ If you like to know how to submit forms so you can receive the form details in y
 <!-- END Contact Section -->
 ```
 
-
-
 #### Footer Section
 
 - Inside h4 tag with the class `heading heading-sm text-lt` add your name.
@@ -700,10 +698,9 @@ Each project will have its own Page. The project page will have important detail
 
 <br>
 
+## Deployment 📦
 
-### Deployment 📦
-
-Once you have done with your setup. You need to put your website online!
+Once you have done with your setup, you need to put your website online!
 
 I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
 
@@ -760,9 +757,9 @@ If you like this project, give it a **GitHub** star by pressing the **Star** but
 
 <br>
 
-#### Note: 
-I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
+### Note
 
+I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
 
 <br>
 
