@@ -145,7 +145,7 @@ textarea {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform .5s; }
+  transition: transform .3s; }
   .btn:hover {
     transform: translateY(-3px); }
   .btn--bg {
@@ -179,6 +179,9 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .text-primary {
       font-size: 2rem; } }
+
+.d-none {
+  display: none; }
 
 .home-hero {
   color: #fff;
@@ -562,20 +565,26 @@ textarea {
         display: block; } }
   .header__main-ham-menu {
     width: 100%; }
+  .header__main-ham-menu-close {
+    width: 100%; }
   .header__sm-menu {
     background: #fff;
     position: absolute;
     width: 100%;
     top: 100%;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); }
     .header__sm-menu--active {
-      display: none; }
+      visibility: hidden;
+      opacity: 0; }
       @media only screen and (max-width: 37.5em) {
         .header__sm-menu--active {
-          display: block; } }
+          visibility: visible;
+          opacity: 1; } }
   .header__sm-menu-link a {
     display: block;
     text-decoration: none;
@@ -586,7 +595,10 @@ textarea {
     border-bottom: 1px solid #eee;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    transition: color .3s; }
+    .header__sm-menu-link a:hover {
+      color: #0062b9; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
