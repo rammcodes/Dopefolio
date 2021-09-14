@@ -144,7 +144,10 @@ textarea {
   display: inline-block;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .5s; }
+  .btn:hover {
+    transform: translateY(-3px); }
   .btn--bg {
     padding: 1.5rem 8rem;
     font-size: 2rem; }
@@ -502,7 +505,11 @@ textarea {
   .header__logo-container {
     display: flex;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #333;
+    transition: color .3s; }
+    .header__logo-container:hover {
+      color: #0062b9; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
@@ -525,7 +532,6 @@ textarea {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333;
     letter-spacing: 1px; }
   .header__links {
     display: flex; }
@@ -539,7 +545,10 @@ textarea {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 700; }
+    font-weight: 700;
+    transition: color .3s; }
+    .header__link:hover {
+      color: #0062b9; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;

@@ -20,6 +20,12 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: #333;
+    transition: color .3s;
+
+    &:hover {
+      color: $themeClrPrimary;
+    }
   }
   &__logo-img-cont {
     width: 5rem;
@@ -46,7 +52,6 @@
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333;
     letter-spacing: 1px;
   }
   &__links {
@@ -63,6 +68,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    transition: color .3s;
+
+    &:hover {
+      color: $themeClrPrimary;
+    }
     @include respond(tab-port) {
       padding: 3rem 1.8rem;
       font-size: 1.5rem;

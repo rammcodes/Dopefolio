@@ -97,6 +97,11 @@
   font-weight: 700;
   border-radius: $commonBorderRadius;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .5s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
 
   &--bg {
     padding: 1.5rem 8rem;
