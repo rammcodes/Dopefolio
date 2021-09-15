@@ -49,6 +49,12 @@
     display: block;
     padding: 1.2rem;
     border-bottom: 2px solid #eee;
+    transition: background .3s;
+
+    &:hover {
+      background: rgba(#fff,.1);
+    }
+
     &--bd-none {
       border-bottom: 0;
     }
