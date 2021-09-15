@@ -83,7 +83,7 @@ $ npm install
 $ npm run compile:scss
 ```
 
-Once you run `npm run compile:scss`, then you can open the `index.html` inside your favorite browser or using the live server extension.
+Once you run `npm run compile:scss`, then open the `index.html` inside your favorite browser or using the live server extension.
 
 <br>
 
