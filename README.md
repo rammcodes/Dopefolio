@@ -28,6 +28,27 @@
 
 <br/>
 
+## Support
+
+I do need **support** from amazing people like you as I started posting on **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** and want each one of you to checkout my latest Youtube Video which is regarding **Dopefolio** & subscribe to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)**. Here's the video ⬇️
+
+<a href="https://www.youtube.com/watch?v=chUMwOSTezk">
+<div align="center">
+  <img src="https://i.postimg.cc/2yvpm3Qh/Open-source-portfolio-template-for-developers-dopefolio-thumbnail.png" alt="Dopefolio Demo" width="100%" />
+  <br>
+</div>
+</a>
+
+**Subscribing** to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** is the best way to support **Dopefolio** and the developer of **Dopefolio** and it will motivate me to bring more and more awesome content and projects for amazing people like you ❤️
+
+**Subscribing** to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** isn't going to change the world but it will change the world for me, so please do it 😇 and it will not cost you anything 😉
+
+<br/>
+
+---
+
+<br/>
+
 ## Features
 
 - ### **Easy to Setup 💯** 
@@ -743,18 +764,6 @@ Once you press the **Create Site Button** then you will have to follow the 3 ste
 <br>
 
 Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
-
-<br>
-
----
-
-<br>
-
-## Support 😇
-
-If you find this project to be useful then please **support** me by donating some **Money** on the **Buy Me a Coffee** link below so I can continue chasing my dream of building useful **Open Source projects** that will help the developer community and the general audience and will allow me to change my life as well 😇
-
-### **[Buy Me A Coffee](https://www.buymeacoffee.com/rammcodes)** ❤️
 
 <br>
 
