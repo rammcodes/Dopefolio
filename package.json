@@ -9,7 +9,7 @@
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
     "build": "npm-run-all prefix:css compress:css"
   },
-  "author": "",
+  "author": "gabriel c moris",
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
