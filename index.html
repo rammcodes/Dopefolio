@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Surafel's Dopefolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -40,6 +39,11 @@
             <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">
                 Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./testimonials.html" class="header__link">
+                Testimonials
               </a>
             </li>
             <li class="header__link-wrapper">
@@ -404,7 +408,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form id="myForm" class="contact__form" action="">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -439,7 +443,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button onclick="sendEmail()" class="btn btn--theme contact__btn">
               Submit
             </button>
           </form>
@@ -489,5 +493,22 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init("85AihQBmMT7HNUrCR");
+      })();
+      function sendEmail(){
+        console.log('tm here')
+        // emailjs.sendForm('service_d4iou2p', 'template_1t8ja5c', '#myForm')
+        // .then(function(response) {
+        //   console.log('SUCCESS!', response.status, response.text);
+        // }, function(error) {
+        //   console.log('FAILED...', error);
+        // });
+      }
+   </script>
   </body>
 </html>

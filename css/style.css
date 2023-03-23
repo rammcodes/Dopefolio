@@ -296,6 +296,11 @@ textarea {
     width: 100%;
     display: block;
     object-fit: cover; }
+    .testmonials__row-img {
+      /* width: 20% !important; */
+      display: block;
+      object-fit: cover; 
+    }
   .projects__row-content {
     padding: 2rem 0;
     display: flex;
