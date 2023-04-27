@@ -30,11 +30,11 @@
 
 ## Support
 
-I do need **support** from amazing people like you as I started posting on **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** and want each one of you to checkout my latest Youtube Video which is regarding **Dopefolio** & subscribe to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)**. Here's the video ⬇️
+I do need **support** from amazing people like you as I started posting on **[My Linkedin](https://linkedin.com/in/rammcodes)** and want each one of you to checkout my Linkedin Profile where I post amazing content related to Programming & Web Development 🚀
 
-<a href="https://www.youtube.com/watch?v=chUMwOSTezk">
+<a href="https://linkedin.com/in/rammcodes">
 <div align="center">
-  <img src="https://i.postimg.cc/2yvpm3Qh/Open-source-portfolio-template-for-developers-dopefolio-thumbnail.png" alt="Dopefolio Demo" width="100%" />
+  <img src="https://i.postimg.cc/4NRmXG7R/www-linkedin-com-in-rammcodes-4.png" alt="Ram Maheshwari Linkedin Profile" width="100%" />
   <br>
 </div>
 </a>
