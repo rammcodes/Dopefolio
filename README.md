@@ -39,10 +39,6 @@ I do need **support** from amazing people like you as I started posting on **[My
 </div>
 </a>
 
-**Subscribing** to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** is the best way to support **Dopefolio** and the developer of **Dopefolio** and it will motivate me to bring more and more awesome content and projects for amazing people like you ❤️
-
-**Subscribing** to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** isn't going to change the world but it will change the world for me, so please do it 😇 and it will not cost you anything 😉
-
 <br/>
 
 ---
