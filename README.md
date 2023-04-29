@@ -47,14 +47,14 @@ I do need **support** from amazing people like you as I started posting on **[My
 
 ## Features
 
-- ### **Easy to Setup 💯** 
-- ### **Free to Use ( OpenSource ) 🥳** 
-- ### **No Additional Frameworks 🤘** 
-- ### **No Additional Libraries 🙌** 
-- ### **Multi Page 💎** 
-- ### **Fully Responsive 🚀** 
-- ### **Super Fast and Optimized for SEO ⚡** 
-- ### **Great Audits Score 🎖️** 
+- ### **Easy-to-use** 🥑
+- ### **Free to Use ( OpenSource ) 🥳**
+- ### **Multi-page 💎**
+- ### **Fully Responsive 🚀**
+- ### **No Additional Libraries** 🤘
+- ### **No Additional Frameworks** 🙌
+- ### **Super Fast and Optimized for SEO ⚡**
+- ### **Great Audits Score** 🎖️
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
@@ -104,9 +104,7 @@ $ git remote remove origin
 
 <br/>
 
-Then you can install the dependencies
-
-Using NPM:
+Then you can install the dependencies using NPM:
 
 ```bash
 # Install dependencies
@@ -124,9 +122,9 @@ Once you run `npm run compile:scss`, then open the `index.html` inside your favo
 
 <br>
 
-## Template Instructions:
+## Template Instructions
 
-## Step 1 - STYLES
+### Step 1 - STYLES
 
 Make sure you have started the SASS to CSS compilation by running
 
@@ -151,11 +149,11 @@ $themeClrPrimary: #0062b9;
 
 <br/>
 
-## Step 2 - Homepage
+### Step 2 - Homepage
 
 Go to `/index.html` and fill your information, there are 6 sections:
 
-### Header of Homepage
+#### Header of Homepage
 
 - On `.header__logo-img`, Add your own Image, Better if the background of the image is transparent so the background can match the theme color. To remove the background of your image, you can visit remove.bg where you can upload your image and it will remove the background of it.
 - On `.header__logo-sub`, Add your own Name.
@@ -223,7 +221,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- END Header -->
 ```
 
-### Hero Section of Homepage
+#### Hero Section of Homepage
 
 - On `.heading-primary`, put your custom title.
 - On `.text-primary`, put a short description about yourself.
@@ -302,7 +300,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- /END Hero Section -->
 ```
 
-### About Section
+#### About Section
 
 - On `.heading-sec__sub`, put a short description about the section.
 - On `.about__content-details-para`, put your details here and use `<strong></strong>` tag to highlight specific keywords.
@@ -368,7 +366,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- END About Section -->
 ```
 
-### Projects
+#### Projects
 
 - On `.heading-sec__sub`, put a short description about the section.
 - `.projects__row` is the row for each project in your portfolio.
@@ -472,7 +470,7 @@ Currently, I have already added a separate for each project ( considering there 
 <!-- END Projects Section -->
 ```
 
-### Contact Section
+#### Contact Section
 
 - On `.heading-sec__sub`, put a short description about the section.
 - `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your need but just make sure to change the name of **label** and **input/textarea** inside it.
@@ -536,9 +534,7 @@ If you like to know how to submit forms so you can receive the form details in y
 <!-- END Contact Section -->
 ```
 
-
-
-### Footer Section
+#### Footer Section
 
 - Inside h4 tag with the class `heading heading-sm text-lt` add your name.
 - On `.main-footer__short-desc` put a short description about yourself.
@@ -617,11 +613,11 @@ If you like to know how to submit forms so you can receive the form details in y
 
 <br/>
 
-## Step 3 - Project Page
+### Step 3 - Project Page
 
 Each project will have its own Page. The project page will have important details about the project like the Project Title, Description, Technologies, Project Links, etc.
 
-### Project Hero Section
+#### Project Hero Section
 
 - On `.heading-primary` add the Project Title.
 - On `.text-primary` add a short description about the Project.
@@ -649,7 +645,7 @@ Each project will have its own Page. The project page will have important detail
 
 <!-- **** END Project Hero Section **** -->
 
-### Project Details Section
+#### Project Details Section
 
 - On `.project-details__showcase-img`, change the value of **src** to the location/link of Project Mockup.
 - On `.project-details__desc-para` to add a detailed paragraph describing your project. Use multiple `.project-details__desc-para` elements for multiple paragraphs.
@@ -735,10 +731,9 @@ Each project will have its own Page. The project page will have important detail
 
 <br>
 
-
 ## Deployment 📦
 
-Once you have done with your setup. You need to put your website online!
+Once you have done with your setup, you need to put your website online!
 
 I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
 
@@ -769,7 +764,7 @@ Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
 
 ## Give a Star ⭐
 
-If you like this project then give it a **Github** star by pressing the **Star** button ⭐
+If you like this project, give it a **GitHub** star by pressing the **Star** button ⭐
 
 <br>
 
@@ -779,13 +774,13 @@ If you like this project then give it a **Github** star by pressing the **Star**
 
 ## Author 👨‍💻
 
-- **Ram Maheshwari** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
+- **Ram Maheshwari** - **[LinkedIn](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[GitHub](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
 
 <br>
 
-#### Note: 
-I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
+### Note
 
+I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
 
 <br>
 
@@ -806,4 +801,3 @@ Special thanks to [Jacobo Martínez](https://github.com/cobidev) for inspiring m
 ## License 📄
 
 This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
-
