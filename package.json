@@ -12,9 +12,9 @@
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "node-sass": "^6.0.1",
+    "autoprefixer": "^10.4.14",
+    "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^10.1.0"
   }
 }
