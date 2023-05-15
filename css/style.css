@@ -404,7 +404,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(168, 15, 15, 0.8), rgba(168, 15, 15, 0.8)), url(../../dupe/assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(168, 15, 15, 0.8), rgba(168, 15, 15, 0.8)), url(/assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
