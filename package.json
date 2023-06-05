@@ -1,21 +1,24 @@
 {
-  "name": "dopefolio",
+  "name": "100-000-recipies",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "npm start",
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
-    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "build": "npm-run-all prefix:css compress:css"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
-  "author": "",
-  "license": "GPL-3.0",
+  "author": "sauravmeghwal",
+  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1"
+    "@parcel/transformer-sass": "^2.9.1",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "parcel": "^2.9.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  },
+  "dependencies": {
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.11"
   }
 }
