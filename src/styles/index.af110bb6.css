@@ -785,6 +785,11 @@ textarea {
 .main-footer__social-cont {
   margin-top: 2rem;
 }
+italic{
+  font-style: italic;
+  font-weight: 100;
+  color: #000;
+}
 .main-footer__icon {
   width: 2.5rem;
   margin-right: 1rem;
