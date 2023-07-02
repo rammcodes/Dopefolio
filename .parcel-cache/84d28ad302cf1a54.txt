@@ -18,7 +18,7 @@
 81C:\Users\Lenovo\Documents\GitHub\Dopefolio\node_modules\bootstrap\js\index.esm.js133317147818813321 0
 82C:\Users\Lenovo\Documents\GitHub\Dopefolio\node_modules\bootstrap\scss\_alert.scss133317147829262916 0
 108C:\Users\Lenovo\Documents\GitHub\Dopefolio\node_modules\@popperjs\core\lib\dom-utils\getScrollParent.js.flow133317147820103001 0
-54C:\Users\Lenovo\Documents\GitHub\Dopefolio\favicon.jpg133306031756789519 0
+54C:\Users\Lenovo\Documents\GitHub\Dopefolio\favicon.svg133306031756789519 0
 55C:\Users\Lenovo\Documents\GitHub\Dopefolio\node_modules133317147845611754 1
 83C:\Users\Lenovo\Documents\GitHub\Dopefolio\node_modules\@popperjs\core\lib\index.js133317147814916927 0
 88C:\Users\Lenovo\Documents\GitHub\Dopefolio\node_modules\bootstrap\js\dist\util\config.js133317147818307634 0

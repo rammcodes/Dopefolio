@@ -166,10 +166,17 @@ textarea {
   font-size: 2.2rem;
 }
 
+.illustration {
+  width: 100%;
+}
+
 .main-container {
+  flex-direction: column;
+  align-items: center;
   width: 92%;
   max-width: 120rem;
   margin: auto;
+  display: flex;
 }
 
 .btn {
@@ -917,6 +924,12 @@ textarea {
   margin-top: 2rem;
 }
 
+italic {
+  color: #000;
+  font-style: italic;
+  font-weight: 100;
+}
+
 .main-footer__icon {
   width: 2.5rem;
   margin-right: 1rem;
@@ -924,15 +937,6 @@ textarea {
 
 .main-footer__icon--mr-none {
   margin-right: 0;
-}
-
-.contact__form-container {
-  color: #8a2be2;
-  justify-content: center;
-  font-size: 41px;
-  font-weight: 100;
-  text-decoration: underline;
-  display: flex;
 }
 
 .main-footer__lower {

@@ -144,10 +144,16 @@ textarea {
   letter-spacing: 1px;
   font-size: 2.2rem;
 }
+.illustration{
+  width: 100%;
+}
 .main-container {
   max-width: 120rem;
   width: 92%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .btn {
   color: #333;
@@ -214,7 +220,7 @@ textarea {
   max-height: 120rem;
   background-color: #0000;
   background-image: linear-gradient(90deg, #4f279fcc, #3f1b85cc),
-    url(common-bg.70a61d43.svg);
+    url(../img/common-bg.70a61d43.svg);
   background-position: 50%;
   background-repeat: repeat, repeat;
   background-size: auto, auto;
@@ -396,7 +402,7 @@ textarea {
 .contact {
   background-color: #0000;
   background-image: linear-gradient(90deg, #4a2298cc, #3f1b85cc),
-    url(common-bg.70a61d43.svg);
+    url(../img/common-bg.70a61d43.svg);
   background-position: 50%;
   background-repeat: repeat, repeat;
   background-size: cover;
@@ -488,7 +494,7 @@ textarea {
   color: #fff;
   background-color: #0000;
   background-image: linear-gradient(90deg, #6a3ac9cc, #6a3ac9cc),
-    url(common-bg.70a61d43.svg);
+    url(../img/common-bg.70a61d43.svg);
   background-position: 50%;
   background-repeat: repeat, repeat;
   background-size: cover;
@@ -785,7 +791,7 @@ textarea {
 .main-footer__social-cont {
   margin-top: 2rem;
 }
-italic{
+italic {
   font-style: italic;
   font-weight: 100;
   color: #000;
