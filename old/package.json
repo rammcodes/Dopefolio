@@ -1,0 +1,15 @@
+{
+  "name": "dopefolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "parcel": "^2.9.3"
+  }
+}
