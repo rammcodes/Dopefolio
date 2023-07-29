@@ -1,0 +1,13 @@
+<svg id="eBZFLoNMcWx1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 60 60" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <ellipse rx="21.021047" ry="22.148249" transform="matrix(1.284427 0 0 1.219058 30 30)"
+        fill="#fff" stroke-width="0" />
+    <rect width="20" height="20" rx="0" ry="0"
+        transform="matrix(.707107 0.707107-.707107 0.707107 22.928932 15.857864)"
+        paint-order="stroke fill markers" fill="rgba(125,48,255,0)" stroke="#2a0056"
+        stroke-width="2" />
+    <rect width="20" height="20" rx="0" ry="0"
+        transform="matrix(.707107 0.707107-.707107 0.707107 37.071068 15.857864)"
+        paint-order="stroke fill markers" fill="rgba(125,48,255,0)" stroke="#2a0056"
+        stroke-width="2" />
+</svg>

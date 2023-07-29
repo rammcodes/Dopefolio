@@ -1,20 +1,28 @@
 {
-  "name": "dopefolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "pf-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
-    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "build": "npm-run-all prefix:css compress:css"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "GPL-3.0",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
+    "react-svg": "^16.1.18"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1"
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "vite": "^4.3.9"
   }
 }
