@@ -113,12 +113,12 @@ textarea {
 
 .heading-sec__sub {
   display: block;
-  text-align: center;
+  text-align: justify;
   color: #777;
   font-size: 2rem;
   font-weight: 500;
   max-width: 80rem;
-  margin: auto;
+  margin:auto;
   line-height: 1.6; }
   @media only screen and (max-width: 37.5em) {
     .heading-sec__sub {
@@ -256,8 +256,13 @@ textarea {
       .about__content {
         grid-template-columns: 1fr;
         grid-gap: 8rem; } }
-    .about__content-title {
-      font-weight: 700;
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+      .about__content-title {
       font-size: 2.8rem;
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
