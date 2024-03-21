@@ -2,9 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  background: $themePrimaryBackgroundColor;
 
   &__content {
     display: flex;
@@ -20,12 +18,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #333;
     transition: color .3s;
 
-    &:hover {
-      color: $themeClrPrimary;
-    }
   }
   &__logo-img-cont {
     width: 5rem;
@@ -33,7 +27,6 @@
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: $themeClrPrimary;
 
     @include respond(tab-port) {
       width: 4.5rem;
@@ -49,13 +42,20 @@
     display: block;
   }
   &__logo-sub {
-    font-size: 1.8rem;
+    color: $themeFontColor;
+    font-size: 2.2rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
+
+    & span {
+      color: $themePrimaryColor;
+      font-weight: 300;
+    }
   }
   &__links {
     display: flex;
+
     @include respond(phone) {
       display: none;
     }
@@ -64,14 +64,14 @@
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #333;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
     transition: color .3s;
 
     &:hover {
-      color: $themeClrPrimary;
+      color: $themePrimaryColor;
     }
     @include respond(tab-port) {
       padding: 3rem 1.8rem;
@@ -81,8 +81,6 @@
 
   &__main-ham-menu-cont {
     display: none;
-    width: 3rem;
-
     padding: 2.2rem 0;
 
     @include respond(phone) {
@@ -111,7 +109,7 @@
     &--active {
       visibility: hidden;
       opacity: 0;
-   
+
       @include respond(phone) {
         visibility: visible;
         opacity: 1;
@@ -127,13 +125,13 @@
       color: #333;
       text-align: right;
       border-bottom: 1px solid #eee;
-      font-weight: 700;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 2px;
       transition: color .3s;
-      
+
       &:hover {
-        color: $themeClrPrimary;
+        color: $themePrimaryColor;
       }
     }
     &:first-child {
@@ -144,5 +142,9 @@
   }
   &__sm-menu-link-last {
     border-bottom: 0;
+  }
+
+  .mobile-menu {
+    width: 5rem;
   }
 }

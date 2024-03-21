@@ -2,8 +2,8 @@
   color: #fff;
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      rgba($themePrimaryColor, 0.8),
+      rgba($themePrimaryColor, 0.8)
     ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
@@ -46,7 +46,7 @@
     margin: auto;
 
     &-title {
-      font-weight: 700;
+      font-weight: 600;
       font-size: 2.8rem;
       margin-bottom: 3rem;
       @include respond(phone) {

@@ -1,14 +1,58 @@
-.skills {
+.skill-container {
   display: flex;
   flex-wrap: wrap;
-  &__skill {
+}
+
+.skill-group {
+  width: 31%;
+  margin: 1%;
+  background: $themeSecondaryBackgroundColor;
+  border-radius: $commonBorderRadius;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.skill {
+  &__header {
+    border-bottom: 5px solid $themePrimaryColor;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight: 800;
+    height: 18rem;
+    color: $themeFontColor;
+
+    > .icon {
+      display: block;
+      margin-bottom: 1rem;
+
+      > img {
+        width: 6rem;
+      }
+    }
+  }
+
+  &__content {
+    padding: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__badge {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
     background: rgba(#999, 0.2);
     border-radius: $commonBorderRadius;
-    font-weight: 600;
-    color: #777;
+    font-weight: 400;
+    color: #fff;
   }
 }

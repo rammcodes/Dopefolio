@@ -1,0 +1,59 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact__profile {
+  display: block;
+  text-align: center;
+  margin: 0 auto 5rem;
+
+  > img {
+    width: 20rem;
+  }
+}
+
+.contact-group {
+  width: 48%;
+  margin: 1%;
+  display: flex;
+  background: $themePrimaryBackgroundColor;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    width: 20%;
+    padding: 3rem;
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    margin: auto;
+
+    @include respond(phone) {
+      width: 30%;
+    }
+
+    > img {
+      color: $themePrimaryColor;
+      width: 5rem;
+    }
+  }
+
+  &__body {
+    width: 80%;
+  }
+
+  &__headline {
+    color: $themeFontColor;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2.5rem 0 0.5rem 0;
+  }
+
+  &__content {
+    color: $themeFontColor;
+    font-size: 1.6rem;
+  }
+}

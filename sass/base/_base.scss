@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: inherit;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -35,7 +35,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif;
-  
+
 }
 
 a {
@@ -61,4 +61,8 @@ button {
 
 textarea {
   resize: none;
+}
+
+strong {
+  font-weight: 600;
 }

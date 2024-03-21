@@ -1,0 +1,26 @@
+.imprint {
+  padding: 15rem;
+  color: #fff;
+  background-color: $themeSecondaryBackgroundColor;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+
+  p {
+    font-size: 1.4rem;
+    width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}

@@ -1,412 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Sebastian Larisch | PHP Developer, Freelancer and Spryker Enthusiast</title>
+    <meta name="description" content="Portfolio of Sebastian Larisch, PHP Developer, Freelancer and Spryker Enthusiast"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header__content">
         <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">John Doe</span>
+            <span class="header__logo-sub">web<span>crab</span></span>
         </div>
         <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
+            <ul class="header__links">
+                <li class="header__link-wrapper">
+                    <a href="./index.html" class="header__link"> Home</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#about" class="header__link">About</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#skills" class="header__link">Skills</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#contact" class="header__link">Contact</a>
+                </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
+                <div class="mobile-menu">
+                    <svg viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg" fill="#ff3723" stroke="#ff3723">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="color"></g>
+                            <g id="hair"></g>
+                            <g id="skin"></g>
+                            <g id="skin-shadow"></g>
+                            <g id="line">
+                                <line x1="16" x2="56" y1="26" y2="26" fill="none" stroke="#ff3723" stroke-linecap="round"
+                                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <line x1="16" x2="56" y1="36" y2="36" fill="none" stroke="#ff3723" stroke-linecap="round"
+                                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                                <line x1="16" x2="56" y1="46" y2="46" fill="none" stroke="#ff3723" stroke-linecap="round"
+                                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></line>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none"/>
+            </div>
         </div>
-      </div>
-      <div class="header__sm-menu">
+    </div>
+    <div class="header__sm-menu">
         <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
+            <ul class="header__sm-menu-links">
+                <li class="header__sm-menu-link">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#about">About</a>
+                </li>
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#skills">Skills</a>
+                </li>
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is John Doe</h1>
+    </div>
+</header>
+<section class="home-hero">
+    <div class="home-hero__content">
+        <h1 class="heading-primary">I'm Sebastian Larisch.<span>Spryker Developer</span></h1>
         <div class="home-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente solutions for
-            complex problems
-          </p>
+            <p class="text-primary">
+                With over 15 years of dedicated experience, I'm passionate about crafting innovative solutions as an
+                experienced <strong>Spryker specialist</strong> alongside my proficiency as a PHP backend developer.</p>
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+            <a href="./#contact" class="btn btn--bg">Write me!</a>
         </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="#"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-          >
-            <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
+    </div>
+</section>
+<section id="about" class="about sec-pad">
+    <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
+            <span class="heading-sec__main">About <span>Me</span></span>
         </h2>
+        <span class="heading-sec__sub">
+          Programming isn't just my profession; it's my cherished hobby, driving my commitment to excellence in every project.
+        </span>
+
         <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>John Doe</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Los Angeles. I've done
-                <strong> remote </strong>
-                projects for agencies, consulted for startups, and collaborated
-                with talented people to create
-                <strong>digital products </strong>
-                for both business and consumer use.
-              </p>
-              <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
-              </p>
+            <div class="about__content-main">
+                <h3 class="about__content-title">Get to know me!</h3>
+                <div class="about__content-details">
+                    <p class="about__content-details-para">
+                        Greetings! I'm Sebastian Larisch, a skilled Backend Developer with Frontend proficiency
+                        living close to Berlin. Currently, I'm immersed in the realm of PHP Spryker Development
+                        for a prominent German manufacturer specializing in headphones and loudspeakers. With over
+                        a decade of freelancing experience in both Frontend and Backend development, I offer a
+                        blend of expertise and reliability.
+                    </p>
+                </div>
+                <h3 class="about__content-title">Personal details</h3>
+                <div class="about__content-details">
+                    <ul>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Name:</strong> Sebastian Larisch
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Age:</strong> 39
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Nationality:</strong> Germany
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Email:</strong> kontakt@webcrab.de
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Phone:</strong> +49 162 988 2657
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Languages:</strong> German, English
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Degree:</strong> BEng, Telecommunications Informatics
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about__content-details-para">
+                                <strong>Hobbies:</strong> Chess, Table tennis, Coding, Piano
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Shopify</div>
-              <div class="skills__skill">Wordpress</div>
-              <div class="skills__skill">Google ADS</div>
-              <div class="skills__skill">Facebook Ads</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">IOS</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+            <div class="about__content-experience">
+                <h3 class="about__content-title">Experience</h3>
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
+                        <ul>
+                            <li>
+                                <div class="icon"></div>
+                                <span class="time open-sans-font text-uppercase">2012 - Present</span>
+                                <h5>Senior PHP Developer<span class="place">Lautsprecher Teufel GmbH, Berlin</span></h5>
+                                <p class="open-sans-font">I maintain and enhance the Spryker-based web shop across all domains, specializing in developing and integrating payment methods such as ApplePay, AmazonPay, and Paysafe. Additionally, I manage API integrations and third-party connections, optimize Elasticsearch for improved search functionality, and ensure regular upgrades of the Spryker OS for optimal performance.</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <span class="time open-sans-font text-uppercase">2012 - Present</span>
+                                <h5>PHP Developer & Web Designer<span class="place">Freelancer, Berlin</span></h5>
+                                <p class="open-sans-font">Developing websites and using Wordpress and web applications using PHP, MySQL, CSS and JavaScript for over 30 clients and myself.</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <span class="time open-sans-font text-uppercase">2009 - 2012</span>
+                                <h5>PHP Developer<span class="place">Strato AG, Berlin</span></h5>
+                                <p class="open-sans-font">Responsibility for implementation of new services and functionalities for the customer backend. Extend and maintain the domain provisioning and processes using Perl.</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <span class="time open-sans-font text-uppercase">02/2008 - 10/2008</span>
+                                <h5>Internship Project Manager<span class="place">T-Systems, New York</span></h5>
+                                <p class="open-sans-font">Managing equipment installation projects, hire and oversee contractors. Manage and update network floor plans and databases.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
+    </div>
+</section>
+
+<section id="skills" class="skills sec-pad">
+    <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
+            <span class="heading-sec__main"><span>My</span> Skills</span>
         </h2>
+        <div class="skill-container">
+            <div class="skill-group">
+                <div class="skill__header">
+                    <span class="icon">
+                        <img src="./assets/svg/technologies.svg" alt="Technologies"/>
+                    </span>
+                    TECHNOLOGIES
+                </div>
+                <div class="skill__content">
+                    <div class="skill__badge">Spryker Commerce OS</div>
+                    <div class="skill__badge">PHP</div>
+                    <div class="skill__badge">Symfony</div>
+                    <div class="skill__badge">Postgres/SQL</div>
+                    <div class="skill__badge">Docker</div>
+                    <div class="skill__badge">Elasticsearch</div>
+                    <div class="skill__badge">Twig</div>
+                    <div class="skill__badge">SCSS</div>
+                    <div class="skill__badge">Typescript</div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill__header">
+                    <span class="icon">
+                        <img src="./assets/svg/tools.svg" alt="Tools"/>
+                    </span>
+                    TOOLS
+                </div>
+                <div class="skill__content">
+                    <div class="skill__badge">PHPStorm</div>
+                    <div class="skill__badge">GitLab</div>
+                    <div class="skill__badge">GitHub</div>
+                    <div class="skill__badge">Postman</div>
+                    <div class="skill__badge">JIRA</div>
+                    <div class="skill__badge">Slack</div>
+                    <div class="skill__badge">MS Teams</div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill__header">
+                    <span class="icon">
+                        <img src="./assets/svg/test.svg" alt="TESTING & QUALITY"/>
+                    </span>
+                    TESTING & QUALITY
+                </div>
+                <div class="skill__content">
+                    <div class="skill__badge">PHPUnit</div>
+                    <div class="skill__badge">SOLID Principles</div>
+                    <div class="skill__badge">Behat</div>
+                    <div class="skill__badge">Clean Code</div>
+                    <div class="skill__badge">Test-Driven Development</div>
+                    <div class="skill__badge">Behaviour-Driven Development</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact sec-pad">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">Contact <span>Me</span></span>
+        </h2>
+        <span class="contact__profile">
+            <img src="./assets/png/profil.png" alt="Contact" />
+        </span>
+        <span class="heading-sec__sub">
+          Feel free to reach out—I'm here to assist you as a dedicated freelancer, ready to tackle your project with enthusiasm and expertise.
+        </span>
+
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
+            <div class="contact-container">
+                <div class="contact-group">
+                    <div class="contact-group__icon">
+                        <img src="./assets/png/mail.png" alt="mail"/>
+                    </div>
+                    <div class="contact-group__body">
+                        <div class="contact-group__headline">
+                            Mail me!
+                        </div>
+                        <div class="contact-group__content">
+                            kontakt@webcrab.de
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-group">
+                    <div class="contact-group__icon">
+                        <img src="./assets/png/phone.png" alt="mail"/>
+                    </div>
+                    <div class="contact-group__body">
+                        <div class="contact-group__headline">
+                            Call me!
+                        </div>
+                        <div class="contact-group__content">
+                            +49 162 988 2657
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
         </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="main-container">
         <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
+            <div class="main-footer__row main-footer__row-1">
+                <h2 class="heading heading-sm main-footer__heading-sm">
+                    <span>Social</span>
+                </h2>
+                <div class="main-footer__social-cont">
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sebastian-larisch-787557251/">
+                        <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn"/>
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://www.xing.com/profile/Sebastian_Larisch">
+                        <img class="main-footer__icon" src="./assets/png/xing.png" alt="Xing"/>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
-          </div>
+            <div class="main-footer__row main-footer__row-2">
+                <h4 class="heading heading-sm text-lt">Sebastian Larisch</h4>
+                <p class="main-footer__short-desc">
+                    PHP Developer and Spryker Enthusiast from Germany.
+                </p>
+            </div>
         </div>
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+            &copy; Copyright 2024 webcrab.de | <a href="/imprint.html" target="_blank">Imprint</a>
         </div>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="./index.js"></script>
-  </body>
+<script src="./index.js"></script>
+</body>
 </html>

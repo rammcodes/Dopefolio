@@ -1,0 +1,78 @@
+.about .resume-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.about .resume-box li {
+  position: relative;
+  padding: 0 20px 0 60px;
+  margin: 0 0 50px
+}
+
+.about .resume-box li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  border-left: 1px solid #555
+}
+
+.about .resume-box .icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  right: 0;
+  line-height: 20px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 50%;
+  color: #fff;
+  background-color: $themePrimaryColor;
+}
+
+.about .resume-box .time {
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: $commonBorderRadius;
+  font-weight: 600;
+  background-color: #252525;
+  opacity: .8
+}
+
+.about .resume-box h5 {
+  color: $themeFontColor;
+  font-size: 18px;
+  margin: 7px 0 10px;
+  font-weight: 600;
+}
+
+.about .resume-box p {
+  margin: 0;
+  color: #eee;
+  font-size: 14px
+}
+
+.about .resume-box .place {
+  opacity: .8;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  padding-left: 26px
+}
+
+.about .resume-box .place:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  left: 7px;
+  top: 9px;
+  opacity: .8
+}

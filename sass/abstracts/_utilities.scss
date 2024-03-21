@@ -1,14 +1,37 @@
 .heading-primary {
-  font-size: 6rem;
+  font-size: 4.5rem;
+  color: $themePrimaryColor;
+  line-height: 5rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
+
   @include respond(phone) {
-    font-size: 4.5rem;
+    font-size: 3rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 29px;
+    height: 4px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: $themePrimaryColor;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  > span {
+    color: $themeFontColor;
+    display: block;
+    margin-bottom: 1rem;
   }
 }
 
 .heading-sec {
+  color: $themeFontColor;
   &__mb-bg {
     margin-bottom: 11rem;
     @include respond(tab-port) {
@@ -25,18 +48,23 @@
 
   &__main {
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    letter-spacing: 3px;
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
+    font-weight: 800;
+
+    > span {
+      color: $themePrimaryColor;
+    }
+
     &--lt {
-      color: #fff;
+      color: $themeSecondaryBackgroundColor;
       &::after {
         content: '';
-        background: #fff !important;
+        background: $themeSecondaryBackgroundColor !important;
       }
     }
     &::after {
@@ -45,7 +73,7 @@
       top: calc(100% + 1.5rem);
       height: 5px;
       width: 3rem;
-      background: $themeClrPrimary;
+      background: $themePrimaryColor;
       left: 50%;
       transform: translateX(-50%);
       border-radius: $commonBorderRadius;
@@ -59,11 +87,11 @@
   &__sub {
     display: block;
     text-align: center;
-    color: #777;
+    color: #fff;
     font-size: 2rem;
     font-weight: 500;
     max-width: 80rem;
-    margin: auto;
+    margin: 0 auto 10rem;
     line-height: 1.6;
 
     @include respond(phone) {
@@ -71,7 +99,7 @@
     }
 
     &--lt {
-      color: #eee;
+      color: $themeFontColorSecondary;
     }
   }
 }
@@ -89,12 +117,12 @@
 }
 
 .btn {
-  background: #fff;
-  color: #333;
+  background: $themePrimaryColor;
+  color: $themeFontColor;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: $commonBorderRadius;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s;
@@ -113,13 +141,13 @@
   }
 
   &--theme {
-    background: $themeClrPrimary;
+    background: $themePrimaryColor;
     color: #fff;
   }
   &--theme-inv {
-    color: $themeClrPrimary;
+    color: $themePrimaryColor;
     background: #fff;
-    border: 2px solid $themeClrPrimary;
+    border: 2px solid $themePrimaryColor;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px);
   }
@@ -135,7 +163,6 @@
 .text-primary {
   color: #fff;
   font-size: 2.2rem;
-  text-align: center;
   width: 100%;
   line-height: 1.6;
 

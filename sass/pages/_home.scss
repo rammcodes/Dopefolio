@@ -1,29 +1,57 @@
 .home-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
-  background-position: center;
-
+  background-color: #020202;
+  background-position: -440px 190px;
   height: 100vh;
-
-  min-height: 80rem;
-  max-height: 120rem;
+  background-repeat: no-repeat;
   position: relative;
+  background-size: cover;
+  background-image: url(../assets/jpeg/hero.jpg);
 
   @include respond(phone) {
-    height: unset;
-    min-height: unset;
+    padding-top: 10rem;
+  }
+
+  &__tools {
+    margin-top: 10rem;
+    display: flex;
+
+    > div {
+      > img {
+        height: 8rem;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+
+    @include respond(phone) {
+      position: relative;
+      padding-top: 9rem;
+      left: 0;
+      text-align: center;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include respond(phone) {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+      }
+    }
   }
 
   &__socials {
     position: absolute;
     top: 50%;
     border: 2px solid #eee;
-    border-left: 2px solid #eee;
     transform: translateY(-50%);
     @include respond(tab-port) {
       display: none;
@@ -67,15 +95,16 @@
   &__content {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 66%;
     transform: translate(-50%, -50%);
-    max-width: 90rem;
-    width: 92%;
+    max-width: 660px;
+    padding-left: 70px;
 
     @include respond(phone) {
-      padding: 19rem 0 13rem 0;
+      padding: 10rem 2rem 5rem 2rem;
       margin: auto;
       position: static;
+      text-align: center;
       transform: translate(0, 0);
     }
   }
@@ -86,12 +115,12 @@
   }
   &__cta {
     margin-top: 5rem;
-    text-align: center;
   }
 }
 
 .about {
-  background: rgb(250, 250, 250);
+  background: $themeSecondaryBackgroundColor;
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,7 +130,8 @@
       grid-gap: 8rem;
     }
     &-title {
-      font-weight: 700;
+      color: $themeFontColor;
+      font-weight: 600;
       font-size: 2.8rem;
       margin-bottom: 3rem;
       @include respond(phone) {
@@ -110,12 +140,12 @@
     }
     &-details-para {
       font-size: 1.8rem;
-      color: grey;
+      color: $themeFontColor;
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem;
       &--hl {
-        font-weight: 700;
+        font-weight: 600;
         margin: 0 3px;
       }
       &:last-child {
@@ -125,7 +155,9 @@
   }
 }
 
-.projects {
+.skills {
+  background: $themeBackgroundDarkColor;
+
   &__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -166,7 +198,7 @@
       }
 
       &-title {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 2.8rem;
         margin-bottom: 2rem;
         @include respond(phone) {
@@ -188,99 +220,8 @@
 }
 
 .contact {
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
-  background-size: cover;
-  background-position: center;
+  background: $themeSecondaryBackgroundColor;
 
-  &__form-container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: rgba(#fff, 2);
-    padding: 4rem;
-    margin-top: 6rem;
-    max-width: 80rem;
-    text-align: right;
-    width: 95%;
-    border-radius: $commonBorderRadius;
-
-    margin: 5rem auto 0 auto;
-    @include respond(phone) {
-      padding: 3rem;
-    }
-  }
-  &__form-field {
-    margin-bottom: 4rem;
-    @include respond(phone) {
-      margin-bottom: 3rem;
-    }
-  }
-  &__form-label {
-    color: #666;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    display: block;
-    text-align: left;
-  }
-  &__form-input {
-    color: #333;
-    padding: 2rem;
-    width: 100%;
-    border: 1px solid rgb(235, 235, 235);
-    font-size: 1.6rem;
-    letter-spacing: 0px;
-    background: rgba(rgb(240, 240, 240), 1);
-    border-radius: $commonBorderRadius;
-    font-weight: 600;
-    /* Code for Modern Browsers */
-    &::placeholder {
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem;
-    }
-
-    /* Code for WebKit, Blink, Edge */
-    &::-webkit-input-placeholder {
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem;
-    }
-
-    /* Code for Internet Explorer 10-11 */
-    &:-ms-input-placeholder {
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem;
-    }
-
-    /* Code for Microsoft Edge */
-    &::-ms-input-placeholder {
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem;
-    }
-
-    /* Code for Mozilla Firefox 4 to 18 */
-    &:-moz-placeholder {
-      opacity: 1;
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem;
-    }
-
-    /* Code for Mozilla Firefox 19+ */
-    &::-moz-placeholder {
-      opacity: 1;
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem;
-    }
-  }
   &__btn {
     width: 30%;
 
