@@ -60,6 +60,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 li {
@@ -733,13 +734,14 @@ strong {
   text-decoration: none;
   padding: 2.5rem 3rem;
   font-size: 1.6rem;
-  color: #333;
+  color: #fff;
   text-align: right;
   border-bottom: 1px solid #eee;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: color 0.3s;
+  background: #2e2e35;
 }
 .header__sm-menu-link a:hover {
   color: #ff3723;

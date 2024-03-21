@@ -122,13 +122,14 @@
       text-decoration: none;
       padding: 2.5rem 3rem;
       font-size: 1.6rem;
-      color: #333;
+      color: #fff;
       text-align: right;
       border-bottom: 1px solid #eee;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 2px;
       transition: color .3s;
+      background: #2e2e35;
 
       &:hover {
         color: $themePrimaryColor;
