@@ -693,6 +693,35 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
+    .experience {
+      background: #fafafa; }
+      .__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10rem; }
+        @media only screen and (max-width: 56.25em) {
+          .__content {
+            grid-template-columns: 1fr;
+            grid-gap: 8rem; } }
+        .__content-title {
+          font-weight: 700;
+          font-size: 2.8rem;
+          margin-bottom: 3rem; }
+          @media only screen and (max-width: 37.5em) {
+            .__content-title {
+              font-size: 2.4rem; } }
+        .__content-details-para {
+          font-size: 1.8rem;
+          color: grey;
+          max-width: 60rem;
+          line-height: 1.7;
+          margin-bottom: 1rem; }
+          .__content-details-para--hl {
+            font-weight: 700;
+            margin: 0 3px; }
+          .__content-details-para:last-child {
+            margin-bottom: 4rem; }
+
 @keyframes wheel {
   to {
     opacity: 0;
