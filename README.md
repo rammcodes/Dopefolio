@@ -762,7 +762,7 @@ If you like this project then give it a **Github** star by pressing the **Star**
 
 ## Author 👨‍💻
 
-- **Ram Maheshwari** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
+- **Ram Maheshwari** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Instagram](https://instagram.com/rammcodes_)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
 
 <br>
 
