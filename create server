@@ -1,0 +1,187 @@
+-- LocalScript inside StarterGui
+
+local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+gui.Name = "8hcariMenu"
+
+-- Main Frame
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 340, 0, 220)
+frame.Position = UDim2.new(0.5, -170, 0.5, -110)
+frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+frame.Active = true
+frame.Draggable = true
+frame.BorderSizePixel = 0
+frame.Parent = gui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 12)
+corner.Parent = frame
+
+-- Title
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, -40, 0, 40)
+title.Position = UDim2.new(0, 10, 0, 0)
+title.BackgroundTransparency = 1
+title.Text = "8hcari"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 20
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.Parent = frame
+
+-- Close Button
+local closeBtn = Instance.new("TextButton")
+closeBtn.Size = UDim2.new(0, 30, 0, 30)
+closeBtn.Position = UDim2.new(1, -40, 0, 10)
+closeBtn.BackgroundColor3 = Color3.fromRGB(100, 20, 20)
+closeBtn.Text = "X"
+closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeBtn.Font = Enum.Font.GothamBold
+closeBtn.TextSize = 18
+closeBtn.Parent = frame
+
+local closeCorner = Instance.new("UICorner")
+closeCorner.CornerRadius = UDim.new(0, 8)
+closeCorner.Parent = closeBtn
+
+-- Tab Buttons
+local tabCreate = Instance.new("TextButton")
+tabCreate.Size = UDim2.new(0, 100, 0, 35)
+tabCreate.Position = UDim2.new(0, 20, 0, 50)
+tabCreate.BackgroundColor3 = Color3.fromRGB(80, 60, 180)
+tabCreate.Text = "Create"
+tabCreate.TextColor3 = Color3.fromRGB(255, 255, 255)
+tabCreate.Font = Enum.Font.GothamBold
+tabCreate.TextSize = 16
+tabCreate.Parent = frame
+
+local tabCorner1 = Instance.new("UICorner")
+tabCorner1.CornerRadius = UDim.new(0, 8)
+tabCorner1.Parent = tabCreate
+
+local tabLink = Instance.new("TextButton")
+tabLink.Size = UDim2.new(0, 100, 0, 35)
+tabLink.Position = UDim2.new(0, 130, 0, 50)
+tabLink.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+tabLink.Text = "Link"
+tabLink.TextColor3 = Color3.fromRGB(255, 255, 255)
+tabLink.Font = Enum.Font.GothamBold
+tabLink.TextSize = 16
+tabLink.Parent = frame
+
+local tabCorner2 = Instance.new("UICorner")
+tabCorner2.CornerRadius = UDim.new(0, 8)
+tabCorner2.Parent = tabLink
+
+--------------------------------------------------
+-- CREATE TAB
+--------------------------------------------------
+local createFrame = Instance.new("Frame")
+createFrame.Size = UDim2.new(1, -40, 1, -100)
+createFrame.Position = UDim2.new(0, 20, 0, 90)
+createFrame.BackgroundTransparency = 1
+createFrame.Parent = frame
+
+local createBtn = Instance.new("TextButton")
+createBtn.Size = UDim2.new(0, 200, 0, 50)
+createBtn.Position = UDim2.new(0.5, -100, 0.3, 0)
+createBtn.BackgroundColor3 = Color3.fromRGB(120, 60, 200)
+createBtn.Text = "CREATE"
+createBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+createBtn.Font = Enum.Font.GothamBold
+createBtn.TextSize = 18
+createBtn.Parent = createFrame
+
+local createCorner = Instance.new("UICorner")
+createCorner.CornerRadius = UDim.new(0, 10)
+createCorner.Parent = createBtn
+
+-- Click to change and auto reset after 3 seconds
+createBtn.MouseButton1Click:Connect(function()
+	if createBtn.Text == "CREATE" then
+		createBtn.BackgroundColor3 = Color3.fromRGB(0, 180, 80)
+		createBtn.Text = "SUCCESS"
+		task.delay(3, function()
+			if createBtn and createBtn.Parent then
+				createBtn.BackgroundColor3 = Color3.fromRGB(120, 60, 200)
+				createBtn.Text = "CREATE"
+			end
+		end)
+	end
+end)
+
+--------------------------------------------------
+-- LINK TAB
+--------------------------------------------------
+local linkFrame = Instance.new("Frame")
+linkFrame.Size = UDim2.new(1, -40, 1, -100)
+linkFrame.Position = UDim2.new(0, 20, 0, 90)
+linkFrame.BackgroundTransparency = 1
+linkFrame.Visible = false
+linkFrame.Parent = frame
+
+local getLinkBtn = Instance.new("TextButton")
+getLinkBtn.Size = UDim2.new(0, 200, 0, 50)
+getLinkBtn.Position = UDim2.new(0.5, -100, 0.2, 0)
+getLinkBtn.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+getLinkBtn.Text = "Get Link"
+getLinkBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+getLinkBtn.Font = Enum.Font.GothamBold
+getLinkBtn.TextSize = 18
+getLinkBtn.Parent = linkFrame
+
+local linkCornerBtn = Instance.new("UICorner")
+linkCornerBtn.CornerRadius = UDim.new(0, 10)
+linkCornerBtn.Parent = getLinkBtn
+
+local linkLabel = Instance.new("TextBox")
+linkLabel.Size = UDim2.new(1, -40, 0, 30)
+linkLabel.Position = UDim2.new(0, 20, 0.6, 0)
+linkLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+linkLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+linkLabel.Text = ""
+linkLabel.ClearTextOnFocus = false
+linkLabel.Font = Enum.Font.Gotham
+linkLabel.TextSize = 14
+linkLabel.TextXAlignment = Enum.TextXAlignment.Left
+linkLabel.Parent = linkFrame
+
+local linkCornerText = Instance.new("UICorner")
+linkCornerText.CornerRadius = UDim.new(0, 6)
+linkCornerText.Parent = linkLabel
+
+-- Show fake link when clicked
+getLinkBtn.MouseButton1Click:Connect(function()
+	linkLabel.Text = "https//www.roblox.com/GHFdabtYsqiGahV"
+	linkLabel:CaptureFocus() -- allows user to copy manually
+end)
+
+--------------------------------------------------
+-- TAB SWITCHING
+--------------------------------------------------
+local function switchTab(tab)
+	if tab == "create" then
+		createFrame.Visible = true
+		linkFrame.Visible = false
+		tabCreate.BackgroundColor3 = Color3.fromRGB(80, 60, 180)
+		tabLink.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	elseif tab == "link" then
+		createFrame.Visible = false
+		linkFrame.Visible = true
+		tabCreate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		tabLink.BackgroundColor3 = Color3.fromRGB(80, 60, 180)
+	end
+end
+
+tabCreate.MouseButton1Click:Connect(function()
+	switchTab("create")
+end)
+
+tabLink.MouseButton1Click:Connect(function()
+	switchTab("link")
+end)
+
+closeBtn.MouseButton1Click:Connect(function()
+	gui:Destroy()
+end)
