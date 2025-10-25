@@ -1,0 +1,274 @@
+--[[
+Rayfield + JumpCao + Fly nâng cao + custom features
+Client-only, giữ animation cũ Fly và Rayfield GUI
+--]]
+
+-- ======= INIT =======
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+local HttpService = game:GetService("HttpService")
+
+-- ======= INTRO =======
+local INTRO_IMAGE_ASSET = "rbxassetid://13836185493"
+local INTRO_FADE_IN_TIME = 0.75
+local INTRO_SHOW_TIME = 1.6
+local INTRO_FADE_OUT_TIME = 0.75
+
+do
+    local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Name = "RayfieldIntro_Client"
+    ScreenGui.ResetOnSpawn = false
+    ScreenGui.IgnoreGuiInset = true
+    ScreenGui.Parent = game.CoreGui
+
+    local Image = Instance.new("ImageLabel")
+    Image.AnchorPoint = Vector2.new(0.5,0.5)
+    Image.Position = UDim2.new(0.5,0,0.48,0)
+    Image.Size = UDim2.new(0,600,0,180)
+    Image.BackgroundTransparency = 1
+    Image.Image = INTRO_IMAGE_ASSET
+    Image.ImageTransparency = 1
+    Image.Parent = ScreenGui
+
+    task.spawn(function()
+        local steps = 25
+        for i = 1, steps do
+            local t = i/steps
+            Image.ImageTransparency = 1 - t
+            task.wait(INTRO_FADE_IN_TIME/steps)
+        end
+        task.wait(INTRO_SHOW_TIME)
+        for i = 1, steps do
+            local t = i/steps
+            Image.ImageTransparency = t
+            task.wait(INTRO_FADE_OUT_TIME/steps)
+        end
+        ScreenGui:Destroy()
+    end)
+end
+
+task.wait(INTRO_FADE_IN_TIME + INTRO_SHOW_TIME + INTRO_FADE_OUT_TIME + 0.05)
+
+-- ======= LOAD RAYFIELD =======
+local ok, Rayfield = pcall(function()
+    return loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+end)
+if not ok or not Rayfield then
+    warn("Không thể load Rayfield")
+    return
+end
+
+local Window = Rayfield:CreateWindow({
+    Name = "Jump Cao | Rayfield",
+    LoadingTitle = "",
+    LoadingSubtitle = "",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "RayfieldJump",
+        FileName = "JumpConfig"
+    },
+    KeySystem = false
+})
+
+local MainTab = Window:CreateTab("🏃 Jump Cao", 4483362458)
+
+-- ======= Jump Cao =======
+local DEFAULT_JUMPPOWER = 50
+local JumpEnabled = false
+local JumpPower = DEFAULT_JUMPPOWER
+
+local function applyJump(hum)
+    if hum and hum:IsA("Humanoid") then
+        pcall(function() hum.UseJumpPower = true hum.JumpPower = JumpPower end)
+    end
+end
+
+LocalPlayer.CharacterAdded:Connect(function(char)
+    task.wait(0.1)
+    local hum = char:FindFirstChildOfClass("Humanoid")
+    if JumpEnabled then applyJump(hum) end
+end)
+
+MainTab:CreateToggle({
+    Name = "Bật Jump Cao",
+    CurrentValue = false,
+    Flag = "JumpToggle",
+    Callback = function(v)
+        JumpEnabled = v
+        local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+        local hum = char:FindFirstChildOfClass("Humanoid")
+        if v then applyJump(hum) else pcall(function() if hum then hum.JumpPower = DEFAULT_JUMPPOWER end end) end
+    end,
+})
+
+MainTab:CreateSlider({
+    Name = "Độ Cao Khi Nhảy",
+    Range = {50,300},
+    Increment = 5,
+    CurrentValue = JumpPower,
+    Suffix = "Power",
+    Flag = "JumpPowerSlider",
+    Callback = function(v)
+        JumpPower = v
+        if JumpEnabled then
+            local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+            local hum = char:FindFirstChildOfClass("Humanoid")
+            applyJump(hum)
+        end
+    end,
+})
+
+-- ======= Fly =======
+local flyEnabled = false
+local flyScriptLoaded = false
+MainTab:CreateToggle({
+    Name = "Fly",
+    CurrentValue = false,
+    Flag = "FlyToggle",
+    Callback = function(v)
+        flyEnabled = v
+        local char = LocalPlayer.Character
+        if flyEnabled and char then
+            if not flyScriptLoaded then
+                flyScriptLoaded = true
+                loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-v3-30439"))()
+            end
+        end
+    end,
+})
+
+-- ======= ESP Player =======
+local espEnabled = false
+MainTab:CreateToggle({
+    Name = "ESP Player",
+    CurrentValue = false,
+    Flag = "ESPPlayer",
+    Callback = function(v)
+        espEnabled = v
+    end
+})
+
+-- ======= Wall Hop Lor =======
+local wallHopEnabled = false
+MainTab:CreateToggle({
+    Name = "Wall Hop Lor",
+    CurrentValue = false,
+    Flag = "WallHop",
+    Callback = function(v)
+        wallHopEnabled = v
+    end
+})
+
+-- ======= Fire Parts =======
+MainTab:CreateToggle({
+    Name = "Fire Parts",
+    CurrentValue = false,
+    Flag = "FireParts",
+    Callback = function(v)
+        if v then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EnesXVC/FireParts/main/Script"))()
+        end
+    end
+})
+
+-- ======= 🐿️🫙 =======
+MainTab:CreateToggle({
+    Name = "🐿️🫙",
+    CurrentValue = false,
+    Flag = "SquirrelScript",
+    Callback = function(v)
+        if v then
+            loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+        end
+    end
+})
+
+-- ======= Free Admin =======
+MainTab:CreateToggle({
+    Name = "Free Admin",
+    CurrentValue = false,
+    Flag = "FreeAdmin",
+    Callback = function(v)
+        if v then
+            LocalPlayer:Kick("free chỉ có cứt chim với nước mưa")
+        end
+    end
+})
+
+-- ======= TikTok =======
+MainTab:CreateButton({
+    Name = "TikTok",
+    Callback = function()
+        setclipboard("x.meo62")
+        Rayfield:Notify({Title="TikTok", Content="Đã copy x.meo62 vào clipboard", Duration=2})
+    end
+})
+
+-- ======= Bất Tử =======
+local immortalityEnabled = false
+MainTab:CreateToggle({
+    Name = "Bất Tử",
+    CurrentValue = false,
+    Flag = "Immortality",
+    Callback = function(v)
+        immortalityEnabled = v
+        local hum = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if immortalityEnabled then
+            hum.MaxHealth = math.huge
+            hum.Health = math.huge
+            hum:GetPropertyChangedSignal("Health"):Connect(function() hum.Health=math.huge end)
+        else
+            hum.MaxHealth = 100
+            hum.Health = 100
+        end
+    end,
+})
+
+-- ======= No Clip =======
+local noclipEnabled = false
+MainTab:CreateToggle({
+    Name = "No Clip",
+    CurrentValue = false,
+    Flag = "NoClip",
+    Callback = function(v)
+        noclipEnabled = v
+    end
+})
+RunService.Stepped:Connect(function()
+    if noclipEnabled and LocalPlayer.Character then
+        for _,v in pairs(LocalPlayer.Character:GetDescendants()) do
+            if v:IsA("BasePart") then v.CanCollide=false end
+        end
+    end
+end)
+
+-- ======= Gravity =======
+local gravityEnabled = false
+MainTab:CreateToggle({
+    Name = "Gravity",
+    CurrentValue = false,
+    Flag = "Gravity",
+    Callback = function(v)
+        gravityEnabled = v
+        Workspace.Gravity = gravityEnabled and 20 or 196.2
+    end,
+})
+
+-- ======= RenderStepped Loop (ESP + Wall Hop) =======
+RunService.RenderStepped:Connect(function()
+    local char = LocalPlayer.Character
+    if not char then return end
+    local hum = char:FindFirstChildOfClass("Humanoid")
+    local root = char:FindFirstChild("HumanoidRootPart")
+    if not hum or not root then return end
+
+    -- ESP Player
+    if espEnabled then
+        for _, player in pairs(Players:GetPlayers()) do
+            if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                if not player.Character:FindFirstChild("ESP_Box") then
+                    local box = Instance.new("BillboardGui")
+                    box.Name = "ESP_Box"
+                    box.Size = UDim2
