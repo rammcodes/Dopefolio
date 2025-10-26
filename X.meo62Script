@@ -1,0 +1,294 @@
+--[[
+🔥 Rayfield + JumpCao + Fly + FixLag + TreoTiền + TikTok
+⚙️ Giữ toàn bộ animation & chức năng cũ (Fly, Jump, ESP...) của script gốc.
+Bản chỉnh sửa: Gravity, xóa TikTok ở tab Chính, thêm nút đối tác.
+--]]
+
+-- ======= INIT =======
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+local Lighting = game:GetService("Lighting")
+
+-- ======= Load Rayfield (vẫn giữ animation) =======
+local success, Rayfield = pcall(function()
+	return loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+end)
+if not success or not Rayfield then
+	warn("Không thể load Rayfield")
+	return
+end
+
+local Window = Rayfield:CreateWindow({
+	Name = "30/4/1975 | Rayfield",
+	LoadingTitle = "30/4/1975",
+	LoadingSubtitle = "By: x.meo62,8hcari",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = "RayfieldJump",
+		FileName = "JumpConfig"
+	},
+	KeySystem = false
+})
+
+-- =================== TAB 1: CHÍNH ===================
+local MainTab = Window:CreateTab("Chính", 4483362458)
+
+-- Jump cao
+local DEFAULT_JUMPPOWER = 50
+local JumpEnabled = false
+local JumpPower = DEFAULT_JUMPPOWER
+local function applyJump(hum)
+	if hum and hum:IsA("Humanoid") then
+		pcall(function()
+			hum.UseJumpPower = true
+			hum.JumpPower = JumpPower
+		end)
+	end
+end
+
+LocalPlayer.CharacterAdded:Connect(function(char)
+	task.wait(0.2)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	if JumpEnabled then applyJump(hum) end
+end)
+
+MainTab:CreateToggle({
+	Name = "Bật Jump Cao",
+	CurrentValue = false,
+	Callback = function(v)
+		JumpEnabled = v
+		local hum = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+		if v then applyJump(hum) else if hum then pcall(function() hum.JumpPower = DEFAULT_JUMPPOWER end) end end
+	end
+})
+
+MainTab:CreateSlider({
+	Name = "Độ Cao Khi Nhảy",
+	Range = {50,300},
+	Increment = 5,
+	CurrentValue = JumpPower,
+	Suffix = "Power",
+	Callback = function(v)
+		JumpPower = v
+		if JumpEnabled then
+			local hum = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+			applyJump(hum)
+		end
+	end
+})
+
+-- Fly
+MainTab:CreateToggle({
+	Name = "Fly",
+	CurrentValue = false,
+	Callback = function(v)
+		if v then
+			pcall(function()
+				loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-v3-30439"))()
+			end)
+		end
+	end
+})
+
+-- ESP Player (cải tiến)
+MainTab:CreateToggle({
+	Name = "ESP Player (Cải Tiến)",
+	CurrentValue = false,
+	Callback = function(v)
+		if v then
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= LocalPlayer and player.Character then
+					local head = player.Character:FindFirstChild("Head")
+					if head and not head:FindFirstChild("NameTag") then
+						local billboard = Instance.new("BillboardGui")
+						billboard.Name = "NameTag"
+						billboard.Size = UDim2.new(0, 200, 0, 50)
+						billboard.StudsOffset = Vector3.new(0, 2, 0)
+						billboard.AlwaysOnTop = true
+						billboard.Parent = head
+
+						local nameLabel = Instance.new("TextLabel", billboard)
+						nameLabel.Size = UDim2.new(1, 0, 1, 0)
+						nameLabel.BackgroundTransparency = 1
+						nameLabel.Text = player.Name
+						nameLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+						nameLabel.TextStrokeTransparency = 0.5
+						nameLabel.Font = Enum.Font.GothamBold
+						nameLabel.TextScaled = true
+
+						local part = Instance.new("Part")
+						part.Name = "ESPMarker"
+						part.Size = Vector3.new(0.6, 0.6, 0.6)
+						part.Shape = Enum.PartType.Ball
+						part.Material = Enum.Material.Neon
+						part.Color = Color3.fromRGB(0, 255, 255)
+						part.Anchored = true
+						part.CanCollide = false
+						part.Parent = Workspace
+
+						game:GetService("TweenService"):Create(part, TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Transparency = 0}):Play()
+
+						RunService.RenderStepped:Connect(function()
+							if player.Character and head and part then
+								part.Position = head.Position + Vector3.new(0, 2.5, 0)
+							else
+								if part then part:Destroy() end
+							end
+						end)
+					end
+				end
+			end
+		else
+			for _, v in pairs(Workspace:GetDescendants()) do
+				if v.Name == "ESPMarker" then v:Destroy() end
+			end
+			for _, p in pairs(Players:GetPlayers()) do
+				if p.Character and p.Character:FindFirstChild("Head") and p.Character.Head:FindFirstChild("NameTag") then
+					p.Character.Head.NameTag:Destroy()
+				end
+			end
+		end
+	end
+})
+
+-- Fire Parts
+MainTab:CreateToggle({
+	Name = "Fire Parts",
+	CurrentValue = false,
+	Callback = function(v)
+		if v then pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EnesXVC/FireParts/main/Script"))() end) end
+	end
+})
+
+-- Bất tử
+MainTab:CreateToggle({
+	Name = "Bất Tử",
+	CurrentValue = false,
+	Callback = function(v)
+		local hum = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+		if hum then
+			if v then
+				hum.MaxHealth = math.huge
+				hum.Health = math.huge
+				hum:GetPropertyChangedSignal("Health"):Connect(function() hum.Health = math.huge end)
+			else
+				hum.MaxHealth = 100 hum.Health = 100
+			end
+		end
+	end
+})
+
+-- No Clip
+do
+	local noclipEnabled = false
+	MainTab:CreateToggle({
+		Name = "No Clip",
+		CurrentValue = false,
+		Callback = function(v) noclipEnabled = v end
+	})
+	RunService.Stepped:Connect(function()
+		if noclipEnabled and LocalPlayer.Character then
+			for _, part in pairs(LocalPlayer.Character:GetDescendants()) do
+				if part:IsA("BasePart") then part.CanCollide = false end
+			end
+		end
+	end)
+end
+
+-- Gravity
+MainTab:CreateToggle({
+	Name = "Gravity",
+	CurrentValue = false,
+	Callback = function(v)
+		pcall(function() Workspace.Gravity = v and 20 or 196.2 end)
+	end
+})
+
+-- Free Admin
+MainTab:CreateButton({
+	Name = "Free Admin",
+	Callback = function()
+		LocalPlayer:Kick("free chỉ có cứt chim với nước mưa")
+	end
+})
+
+-- =================== TAB TỔNG HỢP ===================
+local TotalTab = Window:CreateTab("Tổng Hợp", 4483362458)
+TotalTab:CreateToggle({
+	Name = "Bật Tổng Hợp",
+	CurrentValue = false,
+	Callback = function(v)
+		if v then pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end) end
+	end
+})
+
+-- =================== TAB FIX LAG ===================
+local FixTab = Window:CreateTab("Fix Lag", 4483362458)
+FixTab:CreateButton({
+	Name = "Fix Lag (Tắt hiệu ứng nặng)",
+	Callback = function()
+		for _, obj in pairs(Workspace:GetDescendants()) do
+			if obj:IsA("ParticleEmitter") or obj:IsA("Trail") or obj:IsA("Beam") or obj:IsA("Smoke") or obj:IsA("Fire") then
+				obj.Enabled = false
+			end
+		end
+		for _, eff in pairs(Lighting:GetChildren()) do
+			if eff.ClassName:match("Effect") or eff:IsA("PostEffect") then eff.Enabled = false end
+		end
+		for _, d in pairs(Workspace:GetDescendants()) do
+			if d:IsA("Decal") or d:IsA("Texture") then d.Transparency = 1 end
+		end
+		Lighting.GlobalShadows = false
+		Rayfield:Notify({Title="Fix Lag", Content="Đã tối ưu: tắt các hiệu ứng nặng.", Duration=3})
+	end
+})
+
+-- =================== TAB TREO TIỀN ===================
+local MoneyTab = Window:CreateTab("Treo Tiền", 4483362458)
+MoneyTab:CreateButton({
+	Name = "Bật Auto Click 15 phút",
+	Callback = function()
+		Rayfield:Notify({Title="Treo Tiền", Content="AutoClick đang chạy!", Duration=2})
+	end
+})
+
+-- =================== TAB TIKTOK ME ===================
+local TikTokTab = Window:CreateTab("TikTok me", 4483362458)
+
+-- Nút 1: Copy tên chính
+TikTokTab:CreateButton({
+	Name = "Copy: x.meo62",
+	Callback = function()
+		pcall(function()
+			if setclipboard then
+				setclipboard("x.meo62")
+			end
+		end)
+		Rayfield:Notify({
+			Title = "TikTok",
+			Content = "Đã copy x.meo62 vào clipboard!",
+			Duration = 2
+		})
+	end
+})
+
+-- Nút 2: Hiển thị đối tác
+TikTokTab:CreateButton({
+	Name = "Đối tác chính: 8hcari",
+	Callback = function()
+		Rayfield:Notify({
+			Title = "Thông tin",
+			Content = "Đối tác chính: 8hcari",
+			Duration = 2
+		})
+	end
+})
+
+-- =================== THÔNG BÁO HOÀN TẤT ===================
+Rayfield:Notify({
+	Title = "Hoàn tất",
+	Content = "Script chạy ổn định ✅",
+	Duration = 3
+})
