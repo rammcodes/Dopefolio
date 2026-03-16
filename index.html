@@ -35,12 +35,12 @@
             <a href="./index.html" class="header__link"> Home </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#about" class="header__link">About </a>
-          </li>
-          <li class="header__link-wrapper">
             <a href="./index.html#projects" class="header__link">
               Projects
             </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
           </li>
           <li class="header__link-wrapper">
             <a href="./index.html#contact" class="header__link"> Contact </a>
@@ -61,11 +61,11 @@
           </li>
 
           <li class="header__sm-menu-link">
-            <a href="./index.html#about"> About </a>
-          </li>
-
-          <li class="header__sm-menu-link">
             <a href="./index.html#projects"> Projects </a>
+          </li>
+          
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
           </li>
 
           <li class="header__sm-menu-link">
@@ -80,12 +80,12 @@
       <h1 class="heading-primary">Hi, I'm Lev Medvedev</h1>
       <div class="home-hero__info">
         <p class="text-primary">
-          I'm a front-end developer who creates feature-rich web applications for companies. I also learn game
-          development as a hobby.
+          Hello, and welcome to my website! I'm Lev, a game developer!<br/>
+          I used to work as a web developer, but decided to focus on video game creation, which has always fascinated and inspired me!
         </p>
       </div>
       <div class="home-hero__cta">
-        <a href="./#projects" class="btn btn--bg">Projects</a>
+        <a href="./index.html#projects" class="btn btn--bg">Projects</a>
       </div>
     </div>
     <div class="home-hero__socials">
@@ -115,7 +115,35 @@
       <div class="mouse"></div>
     </div>
   </section>
-  <section id="about" class="about sec-pad">
+
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          Here you can see some of my projects:
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/Simple_arcade/img1.png" alt="Simple Arcade" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Simple arcade</h3>
+            <p class="projects__row-content-desc">
+              A simple arcade as a learn project made with Unity.
+              In this game you need to find the keys and avoid traps to reach the final castle and open the gates.
+            </p>
+            <a href="./project_simple-arcade.html" class="btn btn--med btn--theme dynamicBgClr">Project details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="about" class="about sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main">About Me</span>
@@ -130,60 +158,24 @@
             <p class="about__content-details-para">
               Hello! It's
               <strong>Lev Medvedev</strong>
-              and I'm a creative <strong> Frontend Web Developer </strong> located in
-              Kazakhstan. I have a great experience in <strong> collaborative projects for business </strong> and
-              <strong> single-page </strong>
-              application development.
+              and I'm a creative <strong> Game Developer </strong> located in
+              Kazakhstan. I used to work as a web developer, but decided to focus on video game creation, which has always fascinated and inspired me.
+              I decided to start developing with <strong>Unity</strong>, as it's the
+simplest and most versatile game engine for creating 3D games. Having completed my courses, I'm continuing to explore various development
+techniques and <strong>3D modeling with Blender</strong>. I'm currently working on my own project as an indie developer, but I'm also happy to collaborate on interesting projects!
+              I'm also working at my blog where I tell about my experience in development. Feel free to
+              <strong>contact</strong> me here via the form below or any of my socials.
             </p>
-            <p class="about__content-details-para">
-              I'm also working at my blog where I tell about my experience in development. Feel free
-              <strong>contact</strong> me here.
-            </p>
+           
           </div>
-          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          <a href="./index.html#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
         </div>
         <div class="about__content-skills">
           <h3 class="about__content-title">My Skills</h3>
           <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">Angular</div>
-            <div class="skills__skill">RxJS</div>
-            <div class="skills__skill">SASS</div>
-            <div class="skills__skill">GIT</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">Typescript</div>
             <div class="skills__skill">C#</div>
-            <div class="skills__skill">Unity</div>
+            <div class="skills__skill">Unity 3D</div>
             <div class="skills__skill">Blender</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="projects sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projects</span>
-        <span class="heading-sec__sub">
-          Here you can see some of my personal and commercial projects.
-        </span>
-      </h2>
-
-      <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/asap-mock_3.jpg" alt="Ankey ASAP" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Ankey ASAP</h3>
-            <p class="projects__row-content-desc">
-              "Ankey ASAP" is a complex SaaS application created to help companies improve their network security.
-              It aggregates and visualizes data from many sources to provide information for cybersecurity risk
-              management,
-              behavior anomalies, and investigation of incidents found.
-            </p>
-            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr">Project details</a>
           </div>
         </div>
       </div>
@@ -249,14 +241,14 @@
         <div class="main-footer__row main-footer__row-2">
           <h4 class="heading heading-sm text-lt">Lev Medvedev</h4>
           <p class="main-footer__short-desc">
-            A Frontend developer who keeps his code simple and efficient
+            A Gamedev enthusiast
           </p>
         </div>
       </div>
 
       <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
       <div class="main-footer__lower">
-        &copy; Copyright 2021. Made by Ram Maheshwari
+        &copy; Copyright 2021. Ty Ram Maheshwari for the website template!
       </div>
     </div>
   </footer>
