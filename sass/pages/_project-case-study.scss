@@ -1,16 +1,57 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+  background:
+    linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 8.3333333333%,
+      #0028ba 0 16.6666666667%,
+      rgba(0, 0, 0, 0) 0 83.3333333333%,
+      #0028ba 0 91.6666666667%,
+      rgba(0, 0, 0, 0) 0
     ),
-    url(../../assets/svg/common-bg.svg);
-  background-size: cover;
-  background-position: center;
+    linear-gradient(
+      45deg,
+      #0028ba 8.3333333333%,
+      rgba(0, 0, 0, 0) 0 16.6666666667%,
+      #0028ba 0 25%,
+      rgba(0, 0, 0, 0) 0 75%,
+      #0028ba 0 83.3333333333%,
+      rgba(0, 0, 0, 0) 0 91.6666666667%,
+      #0028ba 0
+    ),
+    linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0) 8.3333333333%,
+      #0028ba 0 16.6666666667%,
+      rgba(0, 0, 0, 0) 0 83.3333333333%,
+      #0028ba 0 91.6666666667%,
+      rgba(0, 0, 0, 0) 0
+    ),
+    linear-gradient(
+        -45deg,
+        #0028ba 8.3333333333%,
+        rgba(0, 0, 0, 0) 0 16.6666666667%,
+        #0028ba 0 25%,
+        rgba(0, 0, 0, 0) 0 75%,
+        #0028ba 0 83.3333333333%,
+        rgba(0, 0, 0, 0) 0 91.6666666667%,
+        #0028ba 0
+      )
+      #0063b9;
+  background-size: 72px 72px;
+  background-position:
+    0 0,
+    36px 36px;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
   position: relative;
+  overflow: hidden;
 
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     height: unset;
     min-height: unset;
   }
@@ -21,7 +62,7 @@
     width: 92%;
     margin: auto;
 
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       padding: 19rem 0 13rem 0;
       margin: auto;
       position: static;
@@ -45,24 +86,25 @@
     max-width: 90rem;
     margin: auto;
 
+    &-gallery {
+      margin-bottom: 3rem;
+    }
+
     &-title {
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         font-size: 2.4rem;
       }
     }
   }
 
-  &__showcase-img-cont {
-    width: 100%;
-    margin-bottom: 6rem;
-  }
-
   &__showcase-img {
     width: 100%;
+    border-radius: 18px;
   }
+  
   &__content-main {
     width: 100%;
     max-width: 70rem;
@@ -91,7 +133,7 @@
       margin-right: 1.5rem;
       font-size: 1.6rem;
       background: rgba(#999, 0.2);
-      border-radius: $commonBorderRadius;
+      border-radius: variables.$commonBorderRadius;
       font-weight: 600;
       color: #777;
     }
@@ -100,7 +142,7 @@
     margin: 0 0;
     &-btn {
       margin-right: 2rem;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         margin-right: 0;
         width: 70%;
         margin-bottom: 2rem;
@@ -108,7 +150,7 @@
       }
       &:last-child {
         margin: 0;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           margin: 0;
         }
       }

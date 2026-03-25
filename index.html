@@ -1,55 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lev Medvedev's portfolio</title>
+    <meta name="description" content="Lev Medvedev game developer portfolio" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Lev Medvedev's portfolio</title>
-  <meta name="description" content="Lev Medvedev portfolio" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/png/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/png/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/png/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/png/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/png/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/png/favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-</head>
+  <body>
+    <header class="header" is="header-component"></header>
 
-<body>
-  <header class="header">
+    <section class="home-hero" is="home-hero-component"></section>
+
+    <section
+      id="projects"
+      class="projects sec-pad"
+      is="projects-component"
+    ></section>
+
+    <section id="about" class="about sec-pad" is="about-component"></section>
+
+    <section
+      id="contact"
+      class="contact sec-pad dynamicBg"
+      is="contact-component"
+    ></section>
+
+    <footer is="footer-component" class="main-footer"></footer>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+
+  <template id="header-template">
     <div class="header__content">
       <div class="header__logo-container">
         <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/lev-medvedev.jpg" alt="Lev Medvedev Logo" class="header__logo-img" />
+          <img
+            src="./assets/jpeg/lev-medvedev.jpg"
+            alt="Lev Medvedev Logo"
+            class="header__logo-img"
+          />
         </div>
         <span class="header__logo-sub">Lev Medvedev</span>
       </div>
       <div class="header__main">
         <ul class="header__links">
           <li class="header__link-wrapper">
-            <a href="./index.html" class="header__link"> Home </a>
+            <a href="./" class="header__link"> Home </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link">
-              Projects
-            </a>
+            <a href="./#projects" class="header__link"> Projects </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#about" class="header__link">About </a>
+            <a href="./#about" class="header__link">About </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#contact" class="header__link"> Contact </a>
+            <a href="./#contact" class="header__link"> Contact </a>
           </li>
         </ul>
         <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
+          <img
+            src="./assets/svg/ham-menu.svg"
+            alt="hamburger menu"
+            class="header__main-ham-menu"
+          />
+          <img
+            src="./assets/svg/ham-menu-close.svg"
+            alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none"
+          />
         </div>
       </div>
     </div>
@@ -57,66 +104,95 @@
       <div class="header__sm-menu-content">
         <ul class="header__sm-menu-links">
           <li class="header__sm-menu-link">
-            <a href="./index.html"> Home </a>
+            <a href="./"> Home </a>
           </li>
 
           <li class="header__sm-menu-link">
-            <a href="./index.html#projects"> Projects </a>
-          </li>
-          
-          <li class="header__sm-menu-link">
-            <a href="./index.html#about"> About </a>
+            <a href="./#projects"> Projects </a>
           </li>
 
           <li class="header__sm-menu-link">
-            <a href="./index.html#contact"> Contact </a>
+            <a href="./#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./#contact"> Contact </a>
           </li>
         </ul>
       </div>
     </div>
-  </header>
-  <section class="home-hero">
+  </template>
+
+  <template id="home-hero-template">
     <div class="home-hero__content">
       <h1 class="heading-primary">Hi, I'm Lev Medvedev</h1>
       <div class="home-hero__info">
         <p class="text-primary">
-          Hello, and welcome to my website! I'm Lev, a game developer!<br/>
-          I used to work as a web developer, but decided to focus on video game creation, which has always fascinated and inspired me!
+          Hello, and welcome to my website! I'm Lev, a game developer!<br />
+          I used to work as a web developer, but decided to focus on video game
+          creation, which has always fascinated and inspired me!
         </p>
       </div>
       <div class="home-hero__cta">
-        <a href="./index.html#projects" class="btn btn--bg">Projects</a>
+        <a href="./#projects" class="btn btn--bg">Projects</a>
       </div>
     </div>
     <div class="home-hero__socials">
       <div class="home-hero__social">
-        <a href="https://www.linkedin.com/in/lev-medvedev/" class="home-hero__social-icon-link">
-          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        <a
+          href="https://www.linkedin.com/in/lev-medvedev/"
+          class="home-hero__social-icon-link"
+        >
+          <img
+            src="./assets/png/linkedin-ico.png"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
         </a>
       </div>
       <div class="home-hero__social">
-        <a href="https://github.com/Bullettime23/Bullettime23" class="home-hero__social-icon-link">
-          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        <a
+          href="https://github.com/Bullettime23/Bullettime23"
+          class="home-hero__social-icon-link"
+        >
+          <img
+            src="./assets/png/github-ico.png"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
         </a>
       </div>
       <div class="home-hero__social">
-        <a href="https://x.com/Lev_Medvedev_" class="home-hero__social-icon-link">
-          <img src="./assets/png/twitter-ico.png" alt="icon" class="home-hero__social-icon" />
+        <a
+          href="https://x.com/Lev_Medvedev_"
+          class="home-hero__social-icon-link"
+        >
+          <img
+            src="./assets/png/twitter-ico.png"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
         </a>
       </div>
       <div class="home-hero__social">
-        <a href="https://www.instagram.com/peccaturumheavymetal/"
-          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
+        <a
+          href="https://www.instagram.com/peccaturumheavymetal/"
+          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+        >
+          <img
+            src="./assets/png/insta-ico.png"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
         </a>
       </div>
     </div>
     <div class="home-hero__mouse-scroll-cont">
       <div class="mouse"></div>
     </div>
-  </section>
+  </template>
 
-  <section id="projects" class="projects sec-pad">
+  <template id="projects-template">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Projects</span>
@@ -128,22 +204,32 @@
       <div class="projects__content">
         <div class="projects__row">
           <div class="projects__row-img-cont">
-            <img src="./assets/png/Simple_arcade/img1.png" alt="Simple Arcade" class="projects__row-img" loading="lazy" />
+            <img
+              src="./assets/png/Simple_arcade/img1.png"
+              alt="Simple Arcade"
+              class="projects__row-img"
+              loading="lazy"
+            />
           </div>
           <div class="projects__row-content">
             <h3 class="projects__row-content-title">Simple arcade</h3>
             <p class="projects__row-content-desc">
-              A simple arcade as a learn project made with Unity.
-              In this game you need to find the keys and avoid traps to reach the final castle and open the gates.
+              A simple arcade as a learn project made with Unity. In this game
+              you need to find the keys and avoid traps to reach the final
+              castle and open the gates.
             </p>
-            <a href="./project_simple-arcade.html" class="btn btn--med btn--theme dynamicBgClr">Project details</a>
+            <a
+              href="./project_simple-arcade.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              >Project details</a
+            >
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </template>
 
-    <section id="about" class="about sec-pad">
+  <template id="about-template">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main">About Me</span>
@@ -159,16 +245,23 @@
               Hello! It's
               <strong>Lev Medvedev</strong>
               and I'm a creative <strong> Game Developer </strong> located in
-              Kazakhstan. I used to work as a web developer, but decided to focus on video game creation, which has always fascinated and inspired me.
-              I decided to start developing with <strong>Unity</strong>, as it's the
-simplest and most versatile game engine for creating 3D games. Having completed my courses, I'm continuing to explore various development
-techniques and <strong>3D modeling with Blender</strong>. I'm currently working on my own project as an indie developer, but I'm also happy to collaborate on interesting projects!
-              I'm also working at my blog where I tell about my experience in development. Feel free to
-              <strong>contact</strong> me here via the form below or any of my socials.
+              Kazakhstan. I used to work as a web developer, but decided to
+              focus on video game creation, which has always fascinated and
+              inspired me. I decided to start developing with
+              <strong>Unity</strong>, as it's the simplest and most versatile
+              game engine for creating 3D games. Having completed my courses,
+              I'm continuing to explore various development techniques and
+              <strong>3D modeling with Blender</strong>. I'm currently working
+              on my own project as an indie developer, but I'm also happy to
+              collaborate on interesting projects! I'm also working at my blog
+              where I tell about my experience in development. Feel free to
+              <strong>contact</strong> me here via the form below or any of my
+              socials.
             </p>
-           
           </div>
-          <a href="./index.html#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+            >Contact</a
+          >
         </div>
         <div class="about__content-skills">
           <h3 class="about__content-title">My Skills</h3>
@@ -180,43 +273,78 @@ techniques and <strong>3D modeling with Blender</strong>. I'm currently working 
         </div>
       </div>
     </div>
-  </section>
-  <section id="contact" class="contact sec-pad dynamicBg">
+  </template>
+
+  <template id="contact-template">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main heading-sec__main--lt">Contact</span>
         <span class="heading-sec__sub heading-sec__sub--lt">
-          Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+          Feel free to Contact me by submitting the form below and I will get
+          back to you as soon as possible
         </span>
       </h2>
       <div class="contact__form-container">
-        <form action="https://api.web3forms.com/submit" method="post" class="contact__form">
-          <input type="hidden" name="access_key" value="053d5c26-4292-445d-889c-977622a19284">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="post"
+          class="contact__form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="053d5c26-4292-445d-889c-977622a19284"
+          />
           <div class="contact__form-field">
             <label class="contact__form-label" for="name">Name</label>
-            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
-              id="name" />
+            <input
+              required
+              placeholder="Enter Your Name"
+              type="text"
+              class="contact__form-input"
+              name="name"
+              id="name"
+            />
           </div>
           <div class="contact__form-field">
             <label class="contact__form-label" for="email">Email</label>
-            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
-              id="email" />
+            <input
+              required
+              placeholder="Enter Your Email"
+              type="text"
+              class="contact__form-input"
+              name="email"
+              id="email"
+            />
           </div>
           <div class="contact__form-field">
             <label class="contact__form-label" for="message">Message</label>
-            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
-              name="message" id="message"></textarea>
+            <textarea
+              required
+              cols="30"
+              rows="10"
+              class="contact__form-input"
+              placeholder="Enter Your Message"
+              name="message"
+              id="message"
+            ></textarea>
           </div>
           <!-- Honeypot Spam Protection -->
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
           <button type="submit" class="btn btn--theme contact__btn">
             Submit
           </button>
         </form>
       </div>
     </div>
-  </section>
-  <footer class="main-footer">
+  </template>
+
+  <template id="footer-template">
     <div class="main-container">
       <div class="main-footer__upper">
         <div class="main-footer__row main-footer__row-1">
@@ -224,25 +352,55 @@ techniques and <strong>3D modeling with Blender</strong>. I'm currently working 
             <span>Social</span>
           </h2>
           <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lev-medvedev/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/lev-medvedev/"
+            >
+              <img
+                class="main-footer__icon"
+                src="./assets/png/linkedin-ico.png"
+                alt="icon"
+              />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/Bullettime23/Bullettime23">
-              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Bullettime23/Bullettime23"
+            >
+              <img
+                class="main-footer__icon"
+                src="./assets/png/github-ico.png"
+                alt="icon"
+              />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://x.com/Lev_Medvedev_">
-              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://x.com/Lev_Medvedev_"
+            >
+              <img
+                class="main-footer__icon"
+                src="./assets/png/twitter-ico.png"
+                alt="icon"
+              />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/peccaturumheavymetal/">
-              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/peccaturumheavymetal/"
+            >
+              <img
+                class="main-footer__icon main-footer__icon--mr-none"
+                src="./assets/png/insta-ico.png"
+                alt="icon"
+              />
             </a>
           </div>
         </div>
         <div class="main-footer__row main-footer__row-2">
           <h4 class="heading heading-sm text-lt">Lev Medvedev</h4>
-          <p class="main-footer__short-desc">
-            A Gamedev enthusiast
-          </p>
+          <p class="main-footer__short-desc">A Gamedev enthusiast</p>
         </div>
       </div>
 
@@ -251,9 +409,5 @@ techniques and <strong>3D modeling with Blender</strong>. I'm currently working 
         &copy; Copyright 2021. Ty Ram Maheshwari for the website template!
       </div>
     </div>
-  </footer>
-
-  <script src="./index.js"></script>
-</body>
-
+  </template>
 </html>

@@ -1,20 +1,55 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .home-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+  background:
+    linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 8.3333333333%,
+      #0028ba 0 16.6666666667%,
+      rgba(0, 0, 0, 0) 0 83.3333333333%,
+      #0028ba 0 91.6666666667%,
+      rgba(0, 0, 0, 0) 0
     ),
-    url(../../assets/svg/common-bg.svg);
-  background-position: center;
+    linear-gradient(
+      45deg,
+      #0028ba 8.3333333333%,
+      rgba(0, 0, 0, 0) 0 16.6666666667%,
+      #0028ba 0 25%,
+      rgba(0, 0, 0, 0) 0 75%,
+      #0028ba 0 83.3333333333%,
+      rgba(0, 0, 0, 0) 0 91.6666666667%,
+      #0028ba 0
+    ),
+    linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0) 8.3333333333%,
+      #0028ba 0 16.6666666667%,
+      rgba(0, 0, 0, 0) 0 83.3333333333%,
+      #0028ba 0 91.6666666667%,
+      rgba(0, 0, 0, 0) 0
+    ),
+    linear-gradient(
+        -45deg,
+        #0028ba 8.3333333333%,
+        rgba(0, 0, 0, 0) 0 16.6666666667%,
+        #0028ba 0 25%,
+        rgba(0, 0, 0, 0) 0 75%,
+        #0028ba 0 83.3333333333%,
+        rgba(0, 0, 0, 0) 0 91.6666666667%,
+        #0028ba 0
+      )
+      #0063b9;
+    background-size: 72px 72px;
+    background-position: 0 0, 36px 36px;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+    overflow: hidden;
 
-  height: 100vh;
-
-  min-height: 80rem;
-  max-height: 120rem;
-  position: relative;
-
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     height: unset;
     min-height: unset;
   }
@@ -25,7 +60,7 @@
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     transform: translateY(-50%);
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       display: none;
     }
   }
@@ -35,7 +70,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       display: none;
     }
   }
@@ -49,10 +84,10 @@
     display: block;
     padding: 1.2rem;
     border-bottom: 2px solid #eee;
-    transition: background .3s;
+    transition: background 0.3s;
 
     &:hover {
-      background: rgba(#fff,.1);
+      background: rgba(#fff, 0.1);
     }
 
     &--bd-none {
@@ -72,7 +107,7 @@
     max-width: 90rem;
     width: 92%;
 
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       padding: 19rem 0 13rem 0;
       margin: auto;
       position: static;
@@ -96,7 +131,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 8rem;
     }
@@ -104,7 +139,7 @@
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         font-size: 2.4rem;
       }
     }
@@ -132,13 +167,13 @@
     grid-gap: 5rem;
     margin-bottom: 11rem;
 
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       margin-bottom: 8rem;
     }
 
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       text-align: center;
     }
 
@@ -161,7 +196,7 @@
       flex-direction: column;
       align-items: flex-start;
 
-      @include respond(tab-port) {
+      @include mixins.respond(tab-port) {
         align-items: center;
       }
 
@@ -169,7 +204,7 @@
         font-weight: 700;
         font-size: 2.8rem;
         margin-bottom: 2rem;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 2.4rem;
         }
       }
@@ -179,7 +214,7 @@
         max-width: 60rem;
         line-height: 1.7;
         margin-bottom: 3rem;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 1.7rem;
         }
       }
@@ -189,11 +224,10 @@
 
 .contact {
   background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+    to right,
+    rgba(variables.$themeClrPrimary, 0.8),
+    rgba(variables.$themeClrPrimary, 0.8)
+  );
   background-size: cover;
   background-position: center;
 
@@ -205,16 +239,16 @@
     max-width: 80rem;
     text-align: right;
     width: 95%;
-    border-radius: $commonBorderRadius;
+    border-radius: variables.$commonBorderRadius;
 
     margin: 5rem auto 0 auto;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       padding: 3rem;
     }
   }
   &__form-field {
     margin-bottom: 4rem;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       margin-bottom: 3rem;
     }
   }
@@ -235,7 +269,7 @@
     font-size: 1.6rem;
     letter-spacing: 0px;
     background: rgba(rgb(240, 240, 240), 1);
-    border-radius: $commonBorderRadius;
+    border-radius: variables.$commonBorderRadius;
     font-weight: 600;
     /* Code for Modern Browsers */
     &::placeholder {
@@ -286,7 +320,7 @@
 
     padding: 2rem 4rem;
     font-size: 1.6rem;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       width: 100%;
     }
   }

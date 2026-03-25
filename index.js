@@ -1,38 +1,20 @@
-// ---
-const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
-const smallMenu = document.querySelector('.header__sm-menu')
-const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
-const headerHamMenuCloseBtn = document.querySelector(
-  '.header__main-ham-menu-close'
-)
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+import Alpine from "alpinejs";
 
-hamMenuBtn.addEventListener('click', () => {
-  if (smallMenu.classList.contains('header__sm-menu--active')) {
-    smallMenu.classList.remove('header__sm-menu--active')
-  } else {
-    smallMenu.classList.add('header__sm-menu--active')
-  }
-  if (headerHamMenuBtn.classList.contains('d-none')) {
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  } else {
-    headerHamMenuBtn.classList.add('d-none')
-    headerHamMenuCloseBtn.classList.remove('d-none')
-  }
-})
+import { HomeHeroComponent } from "./components/home-hero.component";
+import { HeaderComponent } from "./components/header.component";
+import { ProjectsComponent } from "./components/projects.component";
+import { AboutComponent } from "./components/about.component";
+import { ContactComponent } from "./components/contact.component";
+import { FooterComponent } from "./components/footer.component";
 
-for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener('click', () => {
-    smallMenu.classList.remove('header__sm-menu--active')
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  })
-}
+window.Alpine = Alpine;
 
-// ---
-const headerLogoConatiner = document.querySelector('.header__logo-container')
+Alpine.start();
 
-headerLogoConatiner.addEventListener('click', () => {
-  location.href = 'index.html'
-})
+
+customElements.define("header-component", HeaderComponent, { extends: "header" });
+customElements.define("home-hero-component", HomeHeroComponent, { extends: "section" });
+customElements.define("projects-component", ProjectsComponent, { extends: "section" });
+customElements.define("about-component", AboutComponent, { extends: "section" });
+customElements.define("contact-component", ContactComponent, { extends: "section" });
+customElements.define("footer-component", FooterComponent, { extends: "footer" });

@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -7,7 +9,7 @@
     margin-right: 1.5rem;
     font-size: 1.6rem;
     background: rgba(#999, 0.2);
-    border-radius: $commonBorderRadius;
+    border-radius: variables.$commonBorderRadius;
     font-weight: 600;
     color: #777;
   }

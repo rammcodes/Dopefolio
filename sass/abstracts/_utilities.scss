@@ -1,9 +1,12 @@
+@use "mixins";
+@use "variables";
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     font-size: 4.5rem;
   }
 }
@@ -11,14 +14,14 @@
 .heading-sec {
   &__mb-bg {
     margin-bottom: 11rem;
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       margin-bottom: 8rem;
     }
   }
 
   &__mb-med {
     margin-bottom: 9rem;
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       margin-bottom: 8rem;
     }
   }
@@ -45,12 +48,12 @@
       top: calc(100% + 1.5rem);
       height: 5px;
       width: 3rem;
-      background: $themeClrPrimary;
+      background: variables.$themeClrPrimary;
       left: 50%;
       transform: translateX(-50%);
-      border-radius: $commonBorderRadius;
+      border-radius: variables.$commonBorderRadius;
 
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         top: calc(100% + 1.2rem);
       }
     }
@@ -66,7 +69,7 @@
     margin: auto;
     line-height: 1.6;
 
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       font-size: 1.8rem;
     }
 
@@ -95,7 +98,7 @@
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
-  border-radius: $commonBorderRadius;
+  border-radius: variables.$commonBorderRadius;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s;
 
@@ -113,13 +116,13 @@
   }
 
   &--theme {
-    background: $themeClrPrimary;
+    background: variables.$themeClrPrimary;
     color: #fff;
   }
   &--theme-inv {
-    color: $themeClrPrimary;
+    color: variables.$themeClrPrimary;
     background: #fff;
-    border: 2px solid $themeClrPrimary;
+    border: 2px solid variables.$themeClrPrimary;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px);
   }
@@ -127,7 +130,7 @@
 
 .sec-pad {
   padding: 12rem 0;
-  @include respond(tab-port) {
+  @include mixins.respond(tab-port) {
     padding: 8rem 0;
   }
 }
@@ -139,7 +142,7 @@
   width: 100%;
   line-height: 1.6;
 
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     font-size: 2rem;
   }
 }

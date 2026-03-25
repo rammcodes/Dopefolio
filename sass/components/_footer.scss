@@ -1,3 +1,5 @@
+@use "../abstracts/mixins";
+
 .main-footer {
   background: #000;
   color: #fff;
@@ -5,17 +7,17 @@
     display: flex;
     justify-content: space-between;
     padding: 8rem 0;
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       padding: 6rem 0;
     }
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       display: block;
     }
   }
 
   &__row-1 {
     order: 2;
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       margin-bottom: 5rem;
     }
   }
@@ -23,7 +25,7 @@
     width: 40%;
     order: 1;
     max-width: 50rem;
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       width: 100%;
     }
   }
@@ -59,7 +61,7 @@
       font-weight: bold;
       margin-left: 2px;
     }
-    @include respond(tab-port) {
+    @include mixins.respond(tab-port) {
       padding: 3.5rem 0;
     }
   }

@@ -1,0 +1,20 @@
+$buttons-height: 60px;
+
+.glide__arrow {
+  position: absolute;
+
+  &--left {
+    top: calc(50% - calc($buttons-height/2));
+    left: 10px;
+  }
+
+  &--right {
+    top: calc(50% - calc($buttons-height/2));
+    right: 10px;
+  }
+
+  img {
+    width: $buttons-height;
+    height: $buttons-height;
+  }
+}
