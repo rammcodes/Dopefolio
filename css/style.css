@@ -17,8 +17,8 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  font-family: inherit; }
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif; }
 
 html {
   font-size: 62.5%;
@@ -64,8 +64,10 @@ textarea {
 
 .heading-primary {
   font-size: 6rem;
+  font-family: "Playwrite AU TAS", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+  padding-top: 50px;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
@@ -136,6 +138,11 @@ textarea {
   margin: auto;
   width: 92%; }
 
+.icon{
+  width: 20px;
+  margin-bottom: -1px;
+}  
+
 .btn {
   background: #fff;
   color: #333;
@@ -145,9 +152,9 @@ textarea {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform 0.3s; }
   .btn:hover {
-    transform: translateY(-3px); }
+    transform: translateY(-5px); }
   .btn--bg {
     padding: 1.5rem 8rem;
     font-size: 2rem; }
@@ -172,9 +179,10 @@ textarea {
 
 .text-primary {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   text-align: center;
   width: 100%;
+  padding-top: 2em;
   line-height: 1.6; }
   @media only screen and (max-width: 37.5em) {
     .text-primary {
@@ -182,6 +190,13 @@ textarea {
 
 .d-none {
   display: none; }
+
+svg {
+  fill: white;
+  width: 20px;
+}  
+
+
 
 .home-hero {
   color: #fff;
@@ -221,7 +236,13 @@ textarea {
     border-bottom: 2px solid #eee;
     transition: background .3s; }
     .home-hero__social-icon-link:hover {
-      background: rgba(255, 255, 255, 0.1); }
+      background: #eee;
+      transition: 0.3s ease-in-out;
+      svg{
+  fill: black;
+  transition: 0.2s ease-in-out;
+}
+     }
     .home-hero__social-icon-link--bd-none {
       border-bottom: 0; }
   .home-hero__social-icon {
@@ -552,9 +573,16 @@ textarea {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-    transition: color .3s; }
+    transition: color .3s;
+    transition: 0.2s ease-in;
+    border: 3px solid transparent;
+     }
     .header__link:hover {
-      color: #0062b9; }
+      color: #0062b9;
+      background-color: #91cafc2f;
+      border-bottom: 3px solid rgba(0, 98, 185, 0.8); 
+      transition: 0.1s ease-in;
+      }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -670,8 +698,13 @@ textarea {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
-    color: #777; }
-
+    color: #777;
+  cursor: pointer; }
+.skills__skill:hover{
+  background-color: #0062b9;
+  color: #eee;
+  transition: 0.3s ease-in;
+}
 .mouse {
   width: 25px;
   height: 40px;
